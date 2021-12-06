@@ -1,0 +1,2700 @@
+using System;
+using System.Collections.Generic;
+using Il2CppDummyDll;
+
+// Token: 0x02000153 RID: 339
+[Token(Token = "0x20000EC")]
+internal class SharedServerConstants
+{
+	// Token: 0x06000BBF RID: 3007 RVA: 0x00002053 File Offset: 0x00000253
+	[Token(Token = "0x6000AB9")]
+	[Address(RVA = "0x2B1920", Offset = "0x2B0120", VA = "0x1802B1920")]
+	public SharedServerConstants()
+	{
+	}
+
+	// Token: 0x04001560 RID: 5472
+	[Token(Token = "0x40013CE")]
+	public const string CLIENT_VERSION = "0.97.0";
+
+	// Token: 0x04001561 RID: 5473
+	[Token(Token = "0x40013CF")]
+	public const string CLIENT_FAKE_VERSION = "0.97.0";
+
+	// Token: 0x04001562 RID: 5474
+	[Token(Token = "0x40013D0")]
+	public const string CLIENT_VERSION_KEY = "lomnb16dvaqirbc8n1";
+
+	// Token: 0x04001563 RID: 5475
+	[Token(Token = "0x40013D1")]
+	public const string SERVER_BUILD_VERSION = "0.10";
+
+	// Token: 0x04001564 RID: 5476
+	[Token(Token = "0x40013D2")]
+	public const string SERVER_TITLE_ID = "D36D";
+
+	// Token: 0x04001565 RID: 5477
+	[Token(Token = "0x40013D3")]
+	public const string GAME_MODE_SOLOS = "solo";
+
+	// Token: 0x04001566 RID: 5478
+	[Token(Token = "0x40013D4")]
+	public const string GAME_MODE_DUOS = "duo";
+
+	// Token: 0x04001567 RID: 5479
+	[Token(Token = "0x40013D5")]
+	public const string GAME_MODE_SQUADS = "squad";
+
+	// Token: 0x04001568 RID: 5480
+	[Token(Token = "0x40013D6")]
+	public const string GAME_MODE_32V32 = "svr";
+
+	// Token: 0x04001569 RID: 5481
+	[Token(Token = "0x40013D7")]
+	public const string GAME_MODE_MYSTERY = "mystery";
+
+	// Token: 0x0400156A RID: 5482
+	[Token(Token = "0x40013D8")]
+	public const int SERVER_PORT_DEFAULT = 7777;
+
+	// Token: 0x0400156B RID: 5483
+	[Token(Token = "0x40013D9")]
+	public const string PLAYFAB_CATALOG = "0.11";
+
+	// Token: 0x0400156C RID: 5484
+	[Token(Token = "0x40013DA")]
+	public const string REGION_NA = "NA";
+
+	// Token: 0x0400156D RID: 5485
+	[Token(Token = "0x40013DB")]
+	public const string REGION_EU = "EU";
+
+	// Token: 0x0400156E RID: 5486
+	[Token(Token = "0x40013DC")]
+	public const string REGION_AS = "AS";
+
+	// Token: 0x0400156F RID: 5487
+	[Token(Token = "0x40013DD")]
+	[FieldOffset(Offset = "0x0")]
+	public static readonly string[] REGIONS;
+
+	// Token: 0x04001570 RID: 5488
+	[Token(Token = "0x40013DE")]
+	public const double SERVER_GAME_LOOP_TICK_RATE = 25.0;
+
+	// Token: 0x04001571 RID: 5489
+	[Token(Token = "0x40013DF")]
+	public const int SERVER_GAME_LOOP_MS = 40;
+
+	// Token: 0x04001572 RID: 5490
+	[Token(Token = "0x40013E0")]
+	public const int MAX_PLAYERS = 64;
+
+	// Token: 0x04001573 RID: 5491
+	[Token(Token = "0x40013E1")]
+	public const bool IS_ISBN_BUILD = false;
+
+	// Token: 0x04001574 RID: 5492
+	[Token(Token = "0x40013E2")]
+	public const string ISBN_SERVER = "127.0.0.1";
+
+	// Token: 0x04001575 RID: 5493
+	[Token(Token = "0x40013E3")]
+	public const string MAP_NAME = "EarlyAccessMap1";
+
+	// Token: 0x04001576 RID: 5494
+	[Token(Token = "0x40013E4")]
+	public const bool USE_PARACHUTE_DIVING = true;
+
+	// Token: 0x04001577 RID: 5495
+	[Token(Token = "0x40013E5")]
+	public const bool USE_SHAPE_COLLISIONS = false;
+
+	// Token: 0x04001578 RID: 5496
+	[Token(Token = "0x40013E6")]
+	public const bool SHOW_SHAPE_COLLISIONS_DEBUG = false;
+
+	// Token: 0x04001579 RID: 5497
+	[Token(Token = "0x40013E7")]
+	public const int MAX_SHAPE_COLLISIONS_TEMP = 16384;
+
+	// Token: 0x0400157A RID: 5498
+	[Token(Token = "0x40013E8")]
+	public const float COLLISIONS_ELLIPSE_RADIUS_X_STRETCH = 1.5f;
+
+	// Token: 0x0400157B RID: 5499
+	[Token(Token = "0x40013E9")]
+	public const float COLLISIONS_PLAYER_RADIUS = 2.1f;
+
+	// Token: 0x0400157C RID: 5500
+	[Token(Token = "0x40013EA")]
+	public const float COLLISIONS_PLAYER_COLLISION_Y_OFFSET = 0.24f;
+
+	// Token: 0x0400157D RID: 5501
+	[Token(Token = "0x40013EB")]
+	public const float COLLISIONS_SHAPE_OFFSET_IF_DESTROYED = -19999f;
+
+	// Token: 0x0400157E RID: 5502
+	[Token(Token = "0x40013EC")]
+	public const bool USE_CURRENCY = true;
+
+	// Token: 0x0400157F RID: 5503
+	[Token(Token = "0x40013ED")]
+	public const bool USE_STEAM_INVENTORY_TICKETS = true;
+
+	// Token: 0x04001580 RID: 5504
+	[Token(Token = "0x40013EE")]
+	public const bool USE_STORES = true;
+
+	// Token: 0x04001581 RID: 5505
+	[Token(Token = "0x40013EF")]
+	public const bool USE_ANIMAL_PASS = true;
+
+	// Token: 0x04001582 RID: 5506
+	[Token(Token = "0x40013F0")]
+	public const bool USE_FREE_BASE_GAME_MODE = false;
+
+	// Token: 0x04001583 RID: 5507
+	[Token(Token = "0x40013F1")]
+	public const bool USE_SERVER_VEHICLE_INPUT = false;
+
+	// Token: 0x04001584 RID: 5508
+	[Token(Token = "0x40013F2")]
+	public const bool USE_DAMAGE_NUMBERS = true;
+
+	// Token: 0x04001585 RID: 5509
+	[Token(Token = "0x40013F3")]
+	public const bool USE_OLDSCHOOL_RECOIL = true;
+
+	// Token: 0x04001586 RID: 5510
+	[Token(Token = "0x40013F4")]
+	public const bool USE_OLDSCHOOL_RECOIL_NONRANDOM = true;
+
+	// Token: 0x04001587 RID: 5511
+	[Token(Token = "0x40013F5")]
+	public const bool USE_ARMOR_PEN = false;
+
+	// Token: 0x04001588 RID: 5512
+	[Token(Token = "0x40013F6")]
+	public const bool USE_PLAYER_COLLISIONS = true;
+
+	// Token: 0x04001589 RID: 5513
+	[Token(Token = "0x40013F7")]
+	public const bool USE_NEW_NETCODE = false;
+
+	// Token: 0x0400158A RID: 5514
+	[Token(Token = "0x40013F8")]
+	public const bool USE_NEW_NETCODE_RECONCILIATION = true;
+
+	// Token: 0x0400158B RID: 5515
+	[Token(Token = "0x40013F9")]
+	public const bool USE_NEW_NETCODE_PREDICTION = true;
+
+	// Token: 0x0400158C RID: 5516
+	[Token(Token = "0x40013FA")]
+	public const bool USE_NEW_NETCODE_INTERPOLATION = true;
+
+	// Token: 0x0400158D RID: 5517
+	[Token(Token = "0x40013FB")]
+	public const double NEW_NETCODE_SERVER_TICK_TIME = 0.03;
+
+	// Token: 0x0400158E RID: 5518
+	[Token(Token = "0x40013FC")]
+	public const double NEW_NETCODE_SERVER_TICK_DILATE_MULT_SPED = 0.91;
+
+	// Token: 0x0400158F RID: 5519
+	[Token(Token = "0x40013FD")]
+	public const double NEW_NETCODE_SERVER_TICK_DILATE_MULT_SLOW = 1.0989010989010988;
+
+	// Token: 0x04001590 RID: 5520
+	[Token(Token = "0x40013FE")]
+	public const byte NET_MSG_TYPE_SERVER_ALLOW_JOIN = 0;
+
+	// Token: 0x04001591 RID: 5521
+	[Token(Token = "0x40013FF")]
+	public const byte NET_MSG_TYPE_CLIENT_PLAYFAB_AUTH = 1;
+
+	// Token: 0x04001592 RID: 5522
+	[Token(Token = "0x4001400")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYFAB_AUTH_RESPONSE = 2;
+
+	// Token: 0x04001593 RID: 5523
+	[Token(Token = "0x4001401")]
+	public const byte NET_MSG_TYPE_CLIENT_READY = 3;
+
+	// Token: 0x04001594 RID: 5524
+	[Token(Token = "0x4001402")]
+	public const byte NET_MSG_TYPE_SERVER_CONFIRM_READY = 4;
+
+	// Token: 0x04001595 RID: 5525
+	[Token(Token = "0x4001403")]
+	public const byte NET_MSG_TYPE_CLIENT_RECEIVED_CONFIRM_READY = 5;
+
+	// Token: 0x04001596 RID: 5526
+	[Token(Token = "0x4001404")]
+	public const byte NET_MSG_TYPE_SERVER_GAME_START = 6;
+
+	// Token: 0x04001597 RID: 5527
+	[Token(Token = "0x4001405")]
+	public const byte NET_MSG_TYPE_CLIENT_FLIGHT_EXIT = 7;
+
+	// Token: 0x04001598 RID: 5528
+	[Token(Token = "0x4001406")]
+	public const byte NET_MSG_TYPE_SERVER_FORCE_POSITION = 8;
+
+	// Token: 0x04001599 RID: 5529
+	[Token(Token = "0x4001407")]
+	public const byte NET_MSG_TYPE_SERVER_GAME_OVER = 9;
+
+	// Token: 0x0400159A RID: 5530
+	[Token(Token = "0x4001408")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_SPAWN = 10;
+
+	// Token: 0x0400159B RID: 5531
+	[Token(Token = "0x4001409")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_INFO_LOBBY = 11;
+
+	// Token: 0x0400159C RID: 5532
+	[Token(Token = "0x400140A")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_INFO_GAME = 12;
+
+	// Token: 0x0400159D RID: 5533
+	[Token(Token = "0x400140B")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_INFO_EMPTY = 13;
+
+	// Token: 0x0400159E RID: 5534
+	[Token(Token = "0x400140C")]
+	public const byte NET_MSG_TYPE_CLIENT_PLAYER_INFO = 14;
+
+	// Token: 0x0400159F RID: 5535
+	[Token(Token = "0x400140D")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_DEAD = 15;
+
+	// Token: 0x040015A0 RID: 5536
+	[Token(Token = "0x400140E")]
+	public const byte NET_MSG_TYPE_CLIENT_PERFORM_ATTACK = 16;
+
+	// Token: 0x040015A1 RID: 5537
+	[Token(Token = "0x400140F")]
+	public const byte NET_MSG_TYPE_SERVER_PERFORM_ATTACK = 17;
+
+	// Token: 0x040015A2 RID: 5538
+	[Token(Token = "0x4001410")]
+	public const byte NET_MSG_TYPE_CLIENT_ATTACK_HIT = 18;
+
+	// Token: 0x040015A3 RID: 5539
+	[Token(Token = "0x4001411")]
+	public const byte NET_MSG_TYPE_SERVER_ATTACK_HIT = 19;
+
+	// Token: 0x040015A4 RID: 5540
+	[Token(Token = "0x4001412")]
+	public const byte NET_MSG_TYPE_SERVER_ATTACK_HIT_HEAL = 23;
+
+	// Token: 0x040015A5 RID: 5541
+	[Token(Token = "0x4001413")]
+	public const byte NET_MSG_TYPE_SERVER_SPAWN_ITEM = 20;
+
+	// Token: 0x040015A6 RID: 5542
+	[Token(Token = "0x4001414")]
+	public const byte NET_MSG_TYPE_CLIENT_LOOT_ITEM = 21;
+
+	// Token: 0x040015A7 RID: 5543
+	[Token(Token = "0x4001415")]
+	public const byte NET_MSG_TYPE_SERVER_LOOT_ITEM = 22;
+
+	// Token: 0x040015A8 RID: 5544
+	[Token(Token = "0x4001416")]
+	public const byte NET_MSG_TYPE_CLIENT_CHAT_MESSAGE = 25;
+
+	// Token: 0x040015A9 RID: 5545
+	[Token(Token = "0x4001417")]
+	public const byte NET_MSG_TYPE_SERVER_CHAT_MESSAGE = 26;
+
+	// Token: 0x040015AA RID: 5546
+	[Token(Token = "0x4001418")]
+	public const byte NET_MSG_TYPE_CLIENT_SELECT_EQUIP_SLOT = 27;
+
+	// Token: 0x040015AB RID: 5547
+	[Token(Token = "0x4001419")]
+	public const byte NET_MSG_TYPE_SERVER_SELECT_EQUIP_SLOT = 28;
+
+	// Token: 0x040015AC RID: 5548
+	[Token(Token = "0x400141A")]
+	public const byte NET_MSG_TYPE_CLIENT_START_RELOAD_WEAPON = 29;
+
+	// Token: 0x040015AD RID: 5549
+	[Token(Token = "0x400141B")]
+	public const byte NET_MSG_TYPE_SERVER_START_RELOAD_WEAPON = 30;
+
+	// Token: 0x040015AE RID: 5550
+	[Token(Token = "0x400141C")]
+	public const byte NET_MSG_TYPE_CLIENT_LANDING = 32;
+
+	// Token: 0x040015AF RID: 5551
+	[Token(Token = "0x400141D")]
+	public const byte NET_MSG_TYPE_SERVER_GAS_WARNING = 33;
+
+	// Token: 0x040015B0 RID: 5552
+	[Token(Token = "0x400141E")]
+	public const byte NET_MSG_TYPE_SERVER_GAS_MOVE = 34;
+
+	// Token: 0x040015B1 RID: 5553
+	[Token(Token = "0x400141F")]
+	public const byte NET_MSG_TYPE_SERVER_RAIN_START = 35;
+
+	// Token: 0x040015B2 RID: 5554
+	[Token(Token = "0x4001420")]
+	public const byte NET_MSG_TYPE_CLIENT_START_THROW_GRENADE = 36;
+
+	// Token: 0x040015B3 RID: 5555
+	[Token(Token = "0x4001421")]
+	public const byte NET_MSG_TYPE_SERVER_START_THROW_GRENADE = 37;
+
+	// Token: 0x040015B4 RID: 5556
+	[Token(Token = "0x4001422")]
+	public const byte NET_MSG_TYPE_CLIENT_THROW_GRENADE = 38;
+
+	// Token: 0x040015B5 RID: 5557
+	[Token(Token = "0x4001423")]
+	public const byte NET_MSG_TYPE_SERVER_THROW_GRENADE = 39;
+
+	// Token: 0x040015B6 RID: 5558
+	[Token(Token = "0x4001424")]
+	public const byte NET_MSG_TYPE_CLIENT_GRENADE_FINISHED = 40;
+
+	// Token: 0x040015B7 RID: 5559
+	[Token(Token = "0x4001425")]
+	public const byte NET_MSG_TYPE_SERVER_GRENADE_FINISHED = 41;
+
+	// Token: 0x040015B8 RID: 5560
+	[Token(Token = "0x4001426")]
+	public const byte NET_MSG_TYPE_SERVER_EXP_REWARD = 42;
+
+	// Token: 0x040015B9 RID: 5561
+	[Token(Token = "0x4001427")]
+	public const byte NET_MSG_TYPE_SERVER_GAME_START_TIME_CHANGED = 43;
+
+	// Token: 0x040015BA RID: 5562
+	[Token(Token = "0x4001428")]
+	public const byte NET_MSG_TYPE_CLIENT_SPECTATE_POSITION = 44;
+
+	// Token: 0x040015BB RID: 5563
+	[Token(Token = "0x4001429")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_HPARMORMOVEMODEJUICE_CHANGE = 45;
+
+	// Token: 0x040015BC RID: 5564
+	[Token(Token = "0x400142A")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_LEFT_LOBBY = 46;
+
+	// Token: 0x040015BD RID: 5565
+	[Token(Token = "0x400142B")]
+	public const byte NET_MSG_TYPE_CLIENT_START_DRINKING = 47;
+
+	// Token: 0x040015BE RID: 5566
+	[Token(Token = "0x400142C")]
+	public const byte NET_MSG_TYPE_SERVER_START_DRINKING = 48;
+
+	// Token: 0x040015BF RID: 5567
+	[Token(Token = "0x400142D")]
+	public const byte NET_MSG_TYPE_SERVER_END_DRINKING = 49;
+
+	// Token: 0x040015C0 RID: 5568
+	[Token(Token = "0x400142E")]
+	public const byte NET_MSG_TYPE_SERVER_CAMPFIRE_LIGHT_UP = 50;
+
+	// Token: 0x040015C1 RID: 5569
+	[Token(Token = "0x400142F")]
+	public const byte NET_MSG_TYPE_CLIENT_USE_COCONUT = 51;
+
+	// Token: 0x040015C2 RID: 5570
+	[Token(Token = "0x4001430")]
+	public const byte NET_MSG_TYPE_SERVER_USE_COCONUT = 52;
+
+	// Token: 0x040015C3 RID: 5571
+	[Token(Token = "0x4001431")]
+	public const byte NET_MSG_TYPE_CLIENT_SLICE_GRASS = 53;
+
+	// Token: 0x040015C4 RID: 5572
+	[Token(Token = "0x4001432")]
+	public const byte NET_MSG_TYPE_SERVER_SLICE_GRASS = 54;
+
+	// Token: 0x040015C5 RID: 5573
+	[Token(Token = "0x4001433")]
+	public const byte NET_MSG_TYPE_CLIENT_ENTER_VEHICLE = 55;
+
+	// Token: 0x040015C6 RID: 5574
+	[Token(Token = "0x4001434")]
+	public const byte NET_MSG_TYPE_SERVER_ENTER_VEHICLE = 56;
+
+	// Token: 0x040015C7 RID: 5575
+	[Token(Token = "0x4001435")]
+	public const byte NET_MSG_TYPE_CLIENT_EXIT_VEHICLE = 57;
+
+	// Token: 0x040015C8 RID: 5576
+	[Token(Token = "0x4001436")]
+	public const byte NET_MSG_TYPE_SERVER_EXIT_VEHICLE = 58;
+
+	// Token: 0x040015C9 RID: 5577
+	[Token(Token = "0x4001437")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_FOUND_GRASS_ITEM = 59;
+
+	// Token: 0x040015CA RID: 5578
+	[Token(Token = "0x4001438")]
+	public const byte NET_MSG_TYPE_CLIENT_VEHICLE_HIT_PLAYER = 60;
+
+	// Token: 0x040015CB RID: 5579
+	[Token(Token = "0x4001439")]
+	public const byte NET_MSG_TYPE_SERVER_VEHICLE_HIT_PLAYER = 61;
+
+	// Token: 0x040015CC RID: 5580
+	[Token(Token = "0x400143A")]
+	public const byte NET_MSG_TYPE_CLIENT_VEHICLE_HIT_WALL = 62;
+
+	// Token: 0x040015CD RID: 5581
+	[Token(Token = "0x400143B")]
+	public const byte NET_MSG_TYPE_SERVER_VEHICLE_HIT_WALL = 63;
+
+	// Token: 0x040015CE RID: 5582
+	[Token(Token = "0x400143C")]
+	public const byte NET_MSG_TYPE_CLIENT_HIT_STATIC_VEHICLE = 64;
+
+	// Token: 0x040015CF RID: 5583
+	[Token(Token = "0x400143D")]
+	public const byte NET_MSG_TYPE_SERVER_HIT_STATIC_VEHICLE = 65;
+
+	// Token: 0x040015D0 RID: 5584
+	[Token(Token = "0x400143E")]
+	public const byte NET_MSG_TYPE_CLIENT_PERFORM_EMOTE = 66;
+
+	// Token: 0x040015D1 RID: 5585
+	[Token(Token = "0x400143F")]
+	public const byte NET_MSG_TYPE_SERVER_PERFORM_EMOTE = 67;
+
+	// Token: 0x040015D2 RID: 5586
+	[Token(Token = "0x4001440")]
+	public const byte NET_MSG_TYPE_SERVER_MOLE_SPAWN = 68;
+
+	// Token: 0x040015D3 RID: 5587
+	[Token(Token = "0x4001441")]
+	public const byte NET_MSG_TYPE_SERVER_MOLE_DROP_CRATE = 69;
+
+	// Token: 0x040015D4 RID: 5588
+	[Token(Token = "0x4001442")]
+	public const byte NET_MSG_TYPE_CLIENT_OPEN_MOLE_CRATE = 70;
+
+	// Token: 0x040015D5 RID: 5589
+	[Token(Token = "0x4001443")]
+	public const byte NET_MSG_TYPE_SERVER_MOLE_CRATE_OPENED = 71;
+
+	// Token: 0x040015D6 RID: 5590
+	[Token(Token = "0x4001444")]
+	public const byte NET_MSG_TYPE_CLIENT_DESTROY_DOODAD = 72;
+
+	// Token: 0x040015D7 RID: 5591
+	[Token(Token = "0x4001445")]
+	public const byte NET_MSG_TYPE_SERVER_DESTROY_DOODAD = 73;
+
+	// Token: 0x040015D8 RID: 5592
+	[Token(Token = "0x4001446")]
+	public const byte NET_MSG_TYPE_CLIENT_PERFORM_WINDUP_ATTACK = 74;
+
+	// Token: 0x040015D9 RID: 5593
+	[Token(Token = "0x4001447")]
+	public const byte NET_MSG_TYPE_SERVER_PERFORM_WINDUP_ATTACK = 75;
+
+	// Token: 0x040015DA RID: 5594
+	[Token(Token = "0x4001448")]
+	public const byte NET_MSG_TYPE_CLIENT_PERFORM_WINDDOWN_ATTACK = 76;
+
+	// Token: 0x040015DB RID: 5595
+	[Token(Token = "0x4001449")]
+	public const byte NET_MSG_TYPE_SERVER_PERFORM_WINDDOWN_ATTACK = 77;
+
+	// Token: 0x040015DC RID: 5596
+	[Token(Token = "0x400144A")]
+	public const byte NET_MSG_TYPE_SERVER_SPECTATOR_COUNT = 78;
+
+	// Token: 0x040015DD RID: 5597
+	[Token(Token = "0x400144B")]
+	public const byte NET_MSG_TYPE_SERVER_TEAMMATES = 79;
+
+	// Token: 0x040015DE RID: 5598
+	[Token(Token = "0x400144C")]
+	public const byte NET_MSG_TYPE_CLIENT_START_PICKUP_TEAMMATE = 80;
+
+	// Token: 0x040015DF RID: 5599
+	[Token(Token = "0x400144D")]
+	public const byte NET_MSG_TYPE_SERVER_START_PICKUP_TEAMMATE = 81;
+
+	// Token: 0x040015E0 RID: 5600
+	[Token(Token = "0x400144E")]
+	public const byte NET_MSG_TYPE_SERVER_PICKUP_TEAMMATE_CANCELLED = 82;
+
+	// Token: 0x040015E1 RID: 5601
+	[Token(Token = "0x400144F")]
+	public const byte NET_MSG_TYPE_SERVER_PICKUP_TEAMMATE_SUCCESS = 83;
+
+	// Token: 0x040015E2 RID: 5602
+	[Token(Token = "0x4001450")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_DOWNED = 84;
+
+	// Token: 0x040015E3 RID: 5603
+	[Token(Token = "0x4001451")]
+	public const byte NET_MSG_TYPE_CLIENT_PLAYER_MARK_MAP = 85;
+
+	// Token: 0x040015E4 RID: 5604
+	[Token(Token = "0x4001452")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_MARK_MAP = 86;
+
+	// Token: 0x040015E5 RID: 5605
+	[Token(Token = "0x4001453")]
+	public const byte NET_MSG_TYPE_CLIENT_GRENADE_TRAP_DEPLOYED = 87;
+
+	// Token: 0x040015E6 RID: 5606
+	[Token(Token = "0x4001454")]
+	public const byte NET_MSG_TYPE_SERVER_CAMPFIRE_LIGHT_UP_LOBBY = 89;
+
+	// Token: 0x040015E7 RID: 5607
+	[Token(Token = "0x4001455")]
+	public const byte NET_MSG_TYPE_CLIENT_CANCEL_RELOAD_WEAPON = 90;
+
+	// Token: 0x040015E8 RID: 5608
+	[Token(Token = "0x4001456")]
+	public const byte NET_MSG_TYPE_SERVER_CANCEL_RELOAD_WEAPON = 91;
+
+	// Token: 0x040015E9 RID: 5609
+	[Token(Token = "0x4001457")]
+	public const byte NET_MSG_TYPE_CLIENT_END_RELOAD_WEAPON = 92;
+
+	// Token: 0x040015EA RID: 5610
+	[Token(Token = "0x4001458")]
+	public const byte NET_MSG_TYPE_SERVER_END_RELOAD_WEAPON = 93;
+
+	// Token: 0x040015EB RID: 5611
+	[Token(Token = "0x4001459")]
+	public const byte NET_MSG_TYPE_SERVER_CHAT_SPAM_WARNING = 94;
+
+	// Token: 0x040015EC RID: 5612
+	[Token(Token = "0x400145A")]
+	public const byte NET_MSG_TYPE_SERVER_TEAMMATE_LEFT = 95;
+
+	// Token: 0x040015ED RID: 5613
+	[Token(Token = "0x400145B")]
+	public const byte NET_MSG_TYPE_SERVER_ADMIN_CLIPBOARD_TEXT = 96;
+
+	// Token: 0x040015EE RID: 5614
+	[Token(Token = "0x400145C")]
+	public const byte NET_MSG_TYPE_CLIENT_DUMMY = 97;
+
+	// Token: 0x040015EF RID: 5615
+	[Token(Token = "0x400145D")]
+	public const byte NET_MSG_TYPE_SERVER_DUMMY = 97;
+
+	// Token: 0x040015F0 RID: 5616
+	[Token(Token = "0x400145E")]
+	public const byte NET_MSG_TYPE_CLIENT_START_DUCT_TAPING = 98;
+
+	// Token: 0x040015F1 RID: 5617
+	[Token(Token = "0x400145F")]
+	public const byte NET_MSG_TYPE_SERVER_START_DUCT_TAPING = 99;
+
+	// Token: 0x040015F2 RID: 5618
+	[Token(Token = "0x4001460")]
+	public const byte NET_MSG_TYPE_SERVER_END_DUCT_TAPING = 100;
+
+	// Token: 0x040015F3 RID: 5619
+	[Token(Token = "0x4001461")]
+	public const byte NET_MSG_TYPE_CLIENT_REPORT = 101;
+
+	// Token: 0x040015F4 RID: 5620
+	[Token(Token = "0x4001462")]
+	public const byte NET_MSG_TYPE_SERVER_LIGHTS_SHOW = 102;
+
+	// Token: 0x040015F5 RID: 5621
+	[Token(Token = "0x4001463")]
+	public const byte NET_MSG_TYPE_SERVER_LOBBY_DESTRUCTIBLES = 103;
+
+	// Token: 0x040015F6 RID: 5622
+	[Token(Token = "0x4001464")]
+	public const byte NET_MSG_TYPE_SERVER_ADMIN_GHOST_MODE = 105;
+
+	// Token: 0x040015F7 RID: 5623
+	[Token(Token = "0x4001465")]
+	public const byte NET_MSG_TYPE_SERVER_CHAT_ROLL = 106;
+
+	// Token: 0x040015F8 RID: 5624
+	[Token(Token = "0x4001466")]
+	public const byte NET_MSG_TYPE_SERVER_SKUNK_OR_POISON_DAMAGE = 107;
+
+	// Token: 0x040015F9 RID: 5625
+	[Token(Token = "0x4001467")]
+	public const byte NET_MSG_TYPE_CLIENT_PARACHUTE_MODE = 108;
+
+	// Token: 0x040015FA RID: 5626
+	[Token(Token = "0x4001468")]
+	public const byte NET_MSG_TYPE_SERVER_PARACHUTE_MODE = 109;
+
+	// Token: 0x040015FB RID: 5627
+	[Token(Token = "0x4001469")]
+	public const byte NET_MSG_TYPE_SERVER_BANAN_OFFERING = 110;
+
+	// Token: 0x040015FC RID: 5628
+	[Token(Token = "0x400146A")]
+	public const byte NET_MSG_TYPE_SERVER_TRAP_FINISHED = 111;
+
+	// Token: 0x040015FD RID: 5629
+	[Token(Token = "0x400146B")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_PINGS = 112;
+
+	// Token: 0x040015FE RID: 5630
+	[Token(Token = "0x400146C")]
+	public const byte NET_MSG_TYPE_SERVER_NO_DANCING_SECRET = 113;
+
+	// Token: 0x040015FF RID: 5631
+	[Token(Token = "0x400146D")]
+	public const byte NET_MSG_TYPE_SERVER_PRESSURE_PLATE_STEPPED = 114;
+
+	// Token: 0x04001600 RID: 5632
+	[Token(Token = "0x400146E")]
+	public const byte NET_MSG_TYPE_SERVER_PRESSURE_PLATE_COLLISION_CHANGE = 115;
+
+	// Token: 0x04001601 RID: 5633
+	[Token(Token = "0x400146F")]
+	public const byte NET_MSG_TYPE_SERVER_STORYTIME_DONK_OFFERING = 116;
+
+	// Token: 0x04001602 RID: 5634
+	[Token(Token = "0x4001470")]
+	public const byte NET_MSG_TYPE_CLIENT_NPC_ATTACKED = 117;
+
+	// Token: 0x04001603 RID: 5635
+	[Token(Token = "0x4001471")]
+	public const byte NET_MSG_TYPE_SERVER_NPC_ATTACKED = 118;
+
+	// Token: 0x04001604 RID: 5636
+	[Token(Token = "0x4001472")]
+	public const byte NET_MSG_TYPE_SERVER_DAILY_OR_WEEKLY_DONE = 119;
+
+	// Token: 0x04001605 RID: 5637
+	[Token(Token = "0x4001473")]
+	public const byte NET_MSG_TYPE_SERVER_MILESTONE_DONE = 120;
+
+	// Token: 0x04001606 RID: 5638
+	[Token(Token = "0x4001474")]
+	public const byte NET_MSG_TYPE_SERVER_SHOOTING_GALLERY = 121;
+
+	// Token: 0x04001607 RID: 5639
+	[Token(Token = "0x4001475")]
+	public const byte NET_MSG_TYPE_CLIENT_ATTACK_HIT_GALLERY_TARGET = 122;
+
+	// Token: 0x04001608 RID: 5640
+	[Token(Token = "0x4001476")]
+	public const byte NET_MSG_TYPE_SERVER_ATTACK_HIT_GALLERY_TARGET = 123;
+
+	// Token: 0x04001609 RID: 5641
+	[Token(Token = "0x4001477")]
+	public const byte NET_MSG_TYPE_SERVER_SHOOTING_GALLERY_SCORES = 124;
+
+	// Token: 0x0400160A RID: 5642
+	[Token(Token = "0x4001478")]
+	public const byte NET_MSG_TYPE_SERVER_REMOVE_PLAYER_GUNS = 125;
+
+	// Token: 0x0400160B RID: 5643
+	[Token(Token = "0x4001479")]
+	public const byte NET_MSG_TYPE_SERVER_XMAS_GOAL_COMPLETED = 126;
+
+	// Token: 0x0400160C RID: 5644
+	[Token(Token = "0x400147A")]
+	public const byte NET_MSG_TYPE_CLIENT_DROP_ITEM = 127;
+
+	// Token: 0x0400160D RID: 5645
+	[Token(Token = "0x400147B")]
+	public const byte NET_MSG_TYPE_SERVER_DROP_ITEM = 128;
+
+	// Token: 0x0400160E RID: 5646
+	[Token(Token = "0x400147C")]
+	public const byte NET_MSG_TYPE_CLIENT_SWAP_ITEM = 129;
+
+	// Token: 0x0400160F RID: 5647
+	[Token(Token = "0x400147D")]
+	public const byte NET_MSG_TYPE_SERVER_SWAP_ITEM = 130;
+
+	// Token: 0x04001610 RID: 5648
+	[Token(Token = "0x400147E")]
+	public const byte NET_MSG_TYPE_CLIENT_ISBN_QUIT = 131;
+
+	// Token: 0x04001611 RID: 5649
+	[Token(Token = "0x400147F")]
+	public const byte NET_MSG_TYPE_SERVER_ISBN_WIN = 132;
+
+	// Token: 0x04001612 RID: 5650
+	[Token(Token = "0x4001480")]
+	public const byte NET_MSG_TYPE_CLIENT_PLAYER_ROLLED = 133;
+
+	// Token: 0x04001613 RID: 5651
+	[Token(Token = "0x4001481")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_ROLLED = 134;
+
+	// Token: 0x04001614 RID: 5652
+	[Token(Token = "0x4001482")]
+	public const byte NET_MSG_TYPE_CLIENT_ENTER_EMU = 135;
+
+	// Token: 0x04001615 RID: 5653
+	[Token(Token = "0x4001483")]
+	public const byte NET_MSG_TYPE_SERVER_ENTER_EMU = 136;
+
+	// Token: 0x04001616 RID: 5654
+	[Token(Token = "0x4001484")]
+	public const byte NET_MSG_TYPE_CLIENT_EXIT_EMU = 137;
+
+	// Token: 0x04001617 RID: 5655
+	[Token(Token = "0x4001485")]
+	public const byte NET_MSG_TYPE_SERVER_EXIT_EMU = 138;
+
+	// Token: 0x04001618 RID: 5656
+	[Token(Token = "0x4001486")]
+	public const byte NET_MSG_TYPE_CLIENT_EMU_ATTACK = 139;
+
+	// Token: 0x04001619 RID: 5657
+	[Token(Token = "0x4001487")]
+	public const byte NET_MSG_TYPE_SERVER_EMU_ATTACK = 140;
+
+	// Token: 0x0400161A RID: 5658
+	[Token(Token = "0x4001488")]
+	public const byte NET_MSG_TYPE_CLIENT_EMU_ATTACK_HIT_PLAYER = 141;
+
+	// Token: 0x0400161B RID: 5659
+	[Token(Token = "0x4001489")]
+	public const byte NET_MSG_TYPE_SERVER_EMU_ATTACK_HIT_PLAYER = 142;
+
+	// Token: 0x0400161C RID: 5660
+	[Token(Token = "0x400148A")]
+	public const byte NET_MSG_TYPE_CLIENT_HIT_EMU = 143;
+
+	// Token: 0x0400161D RID: 5661
+	[Token(Token = "0x400148B")]
+	public const byte NET_MSG_TYPE_SERVER_HIT_EMU = 144;
+
+	// Token: 0x0400161E RID: 5662
+	[Token(Token = "0x400148C")]
+	public const byte NET_MSG_TYPE_SERVER_EMU_MOVEMENT_CHANGED = 145;
+
+	// Token: 0x0400161F RID: 5663
+	[Token(Token = "0x400148D")]
+	public const byte NET_MSG_TYPE_CLIENT_WHIP_EMU = 146;
+
+	// Token: 0x04001620 RID: 5664
+	[Token(Token = "0x400148E")]
+	public const byte NET_MSG_TYPE_SERVER_WHIP_EMU = 147;
+
+	// Token: 0x04001621 RID: 5665
+	[Token(Token = "0x400148F")]
+	public const byte NET_MSG_TYPE_SERVER_EMU_HEALED = 148;
+
+	// Token: 0x04001622 RID: 5666
+	[Token(Token = "0x4001490")]
+	public const byte NET_MSG_TYPE_CLIENT_VEHICLE_HIT_EMU = 149;
+
+	// Token: 0x04001623 RID: 5667
+	[Token(Token = "0x4001491")]
+	public const byte NET_MSG_TYPE_SERVER_VEHICLE_HIT_EMU = 150;
+
+	// Token: 0x04001624 RID: 5668
+	[Token(Token = "0x4001492")]
+	public const byte NET_MSG_TYPE_SERVER_PARACHUTE_SPLAT = 151;
+
+	// Token: 0x04001625 RID: 5669
+	[Token(Token = "0x4001493")]
+	public const byte NET_MSG_TYPE_SERVER_SOCCER_BALL_UPDATE = 152;
+
+	// Token: 0x04001626 RID: 5670
+	[Token(Token = "0x4001494")]
+	public const byte NET_MSG_TYPE_SERVER_BOT_PATHING = 153;
+
+	// Token: 0x04001627 RID: 5671
+	[Token(Token = "0x4001495")]
+	public const byte NET_MSG_TYPE_CLIENT_PRESS_PYRAMID_SARCOPHAGUS = 154;
+
+	// Token: 0x04001628 RID: 5672
+	[Token(Token = "0x4001496")]
+	public const byte NET_MSG_TYPE_SERVER_PRESS_PYRAMID_SARCOPHAGUS = 155;
+
+	// Token: 0x04001629 RID: 5673
+	[Token(Token = "0x4001497")]
+	public const byte NET_MSG_TYPE_CLIENT_NPC_INTERACT = 156;
+
+	// Token: 0x0400162A RID: 5674
+	[Token(Token = "0x4001498")]
+	public const byte NET_MSG_TYPE_SERVER_NPC_INTERACTED = 157;
+
+	// Token: 0x0400162B RID: 5675
+	[Token(Token = "0x4001499")]
+	public const byte NET_MSG_TYPE_SERVER_NPC_AUTO_TRIGGERED = 158;
+
+	// Token: 0x0400162C RID: 5676
+	[Token(Token = "0x400149A")]
+	public const byte NET_MSG_TYPE_CLIENT_EAT_BANANA_TRAP = 159;
+
+	// Token: 0x0400162D RID: 5677
+	[Token(Token = "0x400149B")]
+	public const byte NET_MSG_TYPE_SERVER_EAT_BANANA_TRAP = 160;
+
+	// Token: 0x0400162E RID: 5678
+	[Token(Token = "0x400149C")]
+	public const byte NET_MSG_TYPE_SERVER_BANANA_TRAP_ROTTEN = 161;
+
+	// Token: 0x0400162F RID: 5679
+	[Token(Token = "0x400149D")]
+	public const byte NET_MSG_TYPE_CLIENT_QUICK_CHAT = 162;
+
+	// Token: 0x04001630 RID: 5680
+	[Token(Token = "0x400149E")]
+	public const byte NET_MSG_TYPE_SERVER_QUICK_CHAT = 163;
+
+	// Token: 0x04001631 RID: 5681
+	[Token(Token = "0x400149F")]
+	public const byte NET_MSG_TYPE_SERVER_CONFIG = 164;
+
+	// Token: 0x04001632 RID: 5682
+	[Token(Token = "0x40014A0")]
+	public const byte NET_MSG_TYPE_SERVER_FLIGHT_PATH = 165;
+
+	// Token: 0x04001633 RID: 5683
+	[Token(Token = "0x40014A1")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_TRACKER = 166;
+
+	// Token: 0x04001634 RID: 5684
+	[Token(Token = "0x40014A2")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_HIGH_PING_MODE = 167;
+
+	// Token: 0x04001635 RID: 5685
+	[Token(Token = "0x40014A3")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_DEV_LATENCY = 168;
+
+	// Token: 0x04001636 RID: 5686
+	[Token(Token = "0x40014A4")]
+	public const byte NET_MSG_TYPE_CLIENT_CHEST_OPEN = 169;
+
+	// Token: 0x04001637 RID: 5687
+	[Token(Token = "0x40014A5")]
+	public const byte NET_MSG_TYPE_SERVER_CHEST_OPEN = 170;
+
+	// Token: 0x04001638 RID: 5688
+	[Token(Token = "0x40014A6")]
+	public const byte NET_MSG_TYPE_SERVER_PLAYER_IN_GAS_OR_SKUNK = 171;
+
+	// Token: 0x04001639 RID: 5689
+	[Token(Token = "0x40014A7")]
+	public const byte NET_MSG_TYPE_SERVER_32V32_TEAM_UPDATE = 172;
+
+	// Token: 0x0400163A RID: 5690
+	[Token(Token = "0x40014A8")]
+	public const byte NET_MSG_TYPE_SERVER_DAILIES_AND_WEEKLIES_INFO = 173;
+
+	// Token: 0x0400163B RID: 5691
+	[Token(Token = "0x40014A9")]
+	public const byte NET_MSG_TYPE_SERVER_DAILY_OR_WEEKLY_PROGRESS = 174;
+
+	// Token: 0x0400163C RID: 5692
+	[Token(Token = "0x40014AA")]
+	public const byte NET_MSG_TYPE_SERVER_CAPTURE_NODES_UPDATE = 175;
+
+	// Token: 0x0400163D RID: 5693
+	[Token(Token = "0x40014AB")]
+	public const byte NET_MSG_TYPE_CLIENT_CAPTURE_NODE = 176;
+
+	// Token: 0x0400163E RID: 5694
+	[Token(Token = "0x40014AC")]
+	public const byte NET_MSG_TYPE_SERVER_NEW_NETCODE_ADJUST_TICKS = 177;
+
+	// Token: 0x0400163F RID: 5695
+	[Token(Token = "0x40014AD")]
+	public const byte NET_MSG_TYPE_SERVER_SPAWN_VEHICLE = 178;
+
+	// Token: 0x04001640 RID: 5696
+	[Token(Token = "0x40014AE")]
+	public const byte NET_MSG_TYPE_CLIENT_USE_MUSHROOM = 179;
+
+	// Token: 0x04001641 RID: 5697
+	[Token(Token = "0x40014AF")]
+	public const byte NET_MSG_TYPE_SERVER_USE_MUSHROOM = 180;
+
+	// Token: 0x04001642 RID: 5698
+	[Token(Token = "0x40014B0")]
+	public const byte NET_MSG_TYPE_SERVER_CRAB_STUFF = 181;
+
+	// Token: 0x04001643 RID: 5699
+	[Token(Token = "0x40014B1")]
+	public const byte NET_MSG_TYPE_CLIENT_CLAM_OPEN = 182;
+
+	// Token: 0x04001644 RID: 5700
+	[Token(Token = "0x40014B2")]
+	public const byte NET_MSG_TYPE_SERVER_CLAM_OPEN = 183;
+
+	// Token: 0x04001645 RID: 5701
+	[Token(Token = "0x40014B3")]
+	public const string SERVER_FAIL_JOIN_MSG_FULL = "Could not reserve player slot.";
+
+	// Token: 0x04001646 RID: 5702
+	[Token(Token = "0x40014B4")]
+	public const string SERVER_FAIL_JOIN_MSG_STARTED = "The game has already started.";
+
+	// Token: 0x04001647 RID: 5703
+	[Token(Token = "0x40014B5")]
+	public const string SERVER_FAIL_JOIN_MSG_NOT_AUTHENTICATED = "Not authenticated.";
+
+	// Token: 0x04001648 RID: 5704
+	[Token(Token = "0x40014B6")]
+	public const string SERVER_FAIL_JOIN_MSG_NOT_RECEIVE_READY = "Did not receive ready.";
+
+	// Token: 0x04001649 RID: 5705
+	[Token(Token = "0x40014B7")]
+	public const float LEVEL_TILE_GRID_PIXELS = 72f;
+
+	// Token: 0x0400164A RID: 5706
+	[Token(Token = "0x40014B8")]
+	public const float LEVEL_GRID_PIXELS = 8f;
+
+	// Token: 0x0400164B RID: 5707
+	[Token(Token = "0x40014B9")]
+	public const float LEVEL_TILE_TO_GRID_RATIO = 9f;
+
+	// Token: 0x0400164C RID: 5708
+	[Token(Token = "0x40014BA")]
+	public const float WATER_TILE_TO_GRID_RATIO = 67.5f;
+
+	// Token: 0x0400164D RID: 5709
+	[Token(Token = "0x40014BB")]
+	public const float BIOME_TILE_TO_GRID_RATIO = 8f;
+
+	// Token: 0x0400164E RID: 5710
+	[Token(Token = "0x40014BC")]
+	public const float PLAYER_POSITION_NETWORK_MULTIPLIER = 6f;
+
+	// Token: 0x0400164F RID: 5711
+	[Token(Token = "0x40014BD")]
+	public const float VEHICLE_SPEED_NETWORK_MULTIPLIER = 100f;
+
+	// Token: 0x04001650 RID: 5712
+	[Token(Token = "0x40014BE")]
+	public const float ONE_GAME_UNIT_IN_METERS = 0.1524f;
+
+	// Token: 0x04001651 RID: 5713
+	[Token(Token = "0x40014BF")]
+	public const float DUMMY_MSG_SEND_RATE = 2f;
+
+	// Token: 0x04001652 RID: 5714
+	[Token(Token = "0x40014C0")]
+	public const int COLLISION_BATCH_NUM_POINTS_CAN_SEND_PER_PACKET = 300;
+
+	// Token: 0x04001653 RID: 5715
+	[Token(Token = "0x40014C1")]
+	public const float PLAYER_VISIBLE_MAX_DIST_X = 120f;
+
+	// Token: 0x04001654 RID: 5716
+	[Token(Token = "0x40014C2")]
+	public const float PLAYER_VISIBLE_MAX_DIST_Y = 67.5f;
+
+	// Token: 0x04001655 RID: 5717
+	[Token(Token = "0x40014C3")]
+	public const float SCREEN_EDGE_BUFFER_FOR_LOS = 1f;
+
+	// Token: 0x04001656 RID: 5718
+	[Token(Token = "0x40014C4")]
+	public const float SCREEN_EDGE_BUFFER_FOR_LOS_BOTTOM = 5f;
+
+	// Token: 0x04001657 RID: 5719
+	[Token(Token = "0x40014C5")]
+	public const float PLAYER_HP_STARTING = 100f;
+
+	// Token: 0x04001658 RID: 5720
+	[Token(Token = "0x40014C6")]
+	public const float PLAYER_HP_REVIVED = 25f;
+
+	// Token: 0x04001659 RID: 5721
+	[Token(Token = "0x40014C7")]
+	public const float PLAYER_MAX_MOVE_SPEED_SLOW = 14f;
+
+	// Token: 0x0400165A RID: 5722
+	[Token(Token = "0x40014C8")]
+	public const float PLAYER_MAX_MOVE_SPEED_NORMAL = 31f;
+
+	// Token: 0x0400165B RID: 5723
+	[Token(Token = "0x40014C9")]
+	public const float PLAYER_MAX_MOVE_SPEED_SHOOTING = 20f;
+
+	// Token: 0x0400165C RID: 5724
+	[Token(Token = "0x40014CA")]
+	public const float PLAYER_MAX_MOVE_SPEED_RELOADING = 20f;
+
+	// Token: 0x0400165D RID: 5725
+	[Token(Token = "0x40014CB")]
+	public const float PLAYER_MAX_MOVE_SPEED_MOVE_EMOTES = 20f;
+
+	// Token: 0x0400165E RID: 5726
+	[Token(Token = "0x40014CC")]
+	public const float PLAYER_MAX_MOVE_SPEED_ROLL = 46f;
+
+	// Token: 0x0400165F RID: 5727
+	[Token(Token = "0x40014CD")]
+	public const float PLAYER_MAX_MOVE_SPEED_ROLL_CREEP = 34f;
+
+	// Token: 0x04001660 RID: 5728
+	[Token(Token = "0x40014CE")]
+	public const float PLAYER_MAX_MOVE_SPEED_PARACHUTE = 68f;
+
+	// Token: 0x04001661 RID: 5729
+	[Token(Token = "0x40014CF")]
+	public const float PLAYER_MAX_MOVE_SPEED_PARACHUTE_DIVING = 32f;
+
+	// Token: 0x04001662 RID: 5730
+	[Token(Token = "0x40014D0")]
+	public const float PLAYER_MAX_MOVE_SPEED_DOWNED = 12f;
+
+	// Token: 0x04001663 RID: 5731
+	[Token(Token = "0x40014D1")]
+	public const float PLAYER_MAX_MOVE_SPEED_HAMSTER = 61f;
+
+	// Token: 0x04001664 RID: 5732
+	[Token(Token = "0x40014D2")]
+	public const float PLAYER_MAX_MOVE_SPEED_EMU_RUN = 54f;
+
+	// Token: 0x04001665 RID: 5733
+	[Token(Token = "0x40014D3")]
+	public const float PLAYER_MAX_MOVE_SPEED_EMU_FAST_RUN = 65f;
+
+	// Token: 0x04001666 RID: 5734
+	[Token(Token = "0x40014D4")]
+	public const float PLAYER_MAX_MOVE_SPEED_EMU_WALK = 22f;
+
+	// Token: 0x04001667 RID: 5735
+	[Token(Token = "0x40014D5")]
+	public const float PLAYER_EMU_ATTACK_MOVE_SPEED_MULT = 0.8f;
+
+	// Token: 0x04001668 RID: 5736
+	[Token(Token = "0x40014D6")]
+	public const float PLAYER_SHALLOW_WATER_SPEED_MULT = 0.69f;
+
+	// Token: 0x04001669 RID: 5737
+	[Token(Token = "0x40014D7")]
+	public const float PLAYER_VEHICLE_SHALLOW_WATER_SPEED_MULT = 0.89f;
+
+	// Token: 0x0400166A RID: 5738
+	[Token(Token = "0x40014D8")]
+	public const float PLAYER_ICE_SPEED_MULT = 1.18f;
+
+	// Token: 0x0400166B RID: 5739
+	[Token(Token = "0x40014D9")]
+	public const float PLAYER_ICE_SPEED_NON_ROLL_ADDITION = 9f;
+
+	// Token: 0x0400166C RID: 5740
+	[Token(Token = "0x40014DA")]
+	public const float PLAYER_ICE_SPEED_MULT_VEHICLE = 1.13f;
+
+	// Token: 0x0400166D RID: 5741
+	[Token(Token = "0x40014DB")]
+	public const float PLAYER_ICE_ACCELERATION = 128f;
+
+	// Token: 0x0400166E RID: 5742
+	[Token(Token = "0x40014DC")]
+	public const float PLAYER_ICE_DECELERATION = 6.5f;
+
+	// Token: 0x0400166F RID: 5743
+	[Token(Token = "0x40014DD")]
+	public const float PLAYER_VEHICLE_ICE_DECELERATION_MULT = 5f;
+
+	// Token: 0x04001670 RID: 5744
+	[Token(Token = "0x40014DE")]
+	public const float PLAYER_EMU_ICE_DECELERATION_MULT = 2f;
+
+	// Token: 0x04001671 RID: 5745
+	[Token(Token = "0x40014DF")]
+	public const float PLAYER_ICE_RESET_ACCELERATION = 128f;
+
+	// Token: 0x04001672 RID: 5746
+	[Token(Token = "0x40014E0")]
+	public const float PLAYER_ICE_MAX_SPEED_ACCEL_RATE = 90f;
+
+	// Token: 0x04001673 RID: 5747
+	[Token(Token = "0x40014E1")]
+	public const float PLAYER_ICE_MAX_SPEED_DECEL_RATE = 30f;
+
+	// Token: 0x04001674 RID: 5748
+	[Token(Token = "0x40014E2")]
+	public const float PLAYER_ACCELERATION_HAMSTER = 120f;
+
+	// Token: 0x04001675 RID: 5749
+	[Token(Token = "0x40014E3")]
+	public const float PLAYER_HAMSTER_PENALTY_COLLIDE = 0.7f;
+
+	// Token: 0x04001676 RID: 5750
+	[Token(Token = "0x40014E4")]
+	public const PlayerWalkMode PLAYER_DEFAULT_MOVE_MODE = PlayerWalkMode.Normal;
+
+	// Token: 0x04001677 RID: 5751
+	[Token(Token = "0x40014E5")]
+	public const float PLAYER_BUNNY_HOP_ROLL_CHANCE_TIME = 0.1f;
+
+	// Token: 0x04001678 RID: 5752
+	[Token(Token = "0x40014E6")]
+	public const float PLAYER_MOVE_SPEED_BUNNY_HOP_ROLL_MULT_BONUS = 0.1f;
+
+	// Token: 0x04001679 RID: 5753
+	[Token(Token = "0x40014E7")]
+	public const float PLAYER_ROLL_TIME = 0.9f;
+
+	// Token: 0x0400167A RID: 5754
+	[Token(Token = "0x40014E8")]
+	public const float PLAYER_ROLL_TIME_FORGIVENESS = 0.0333f;
+
+	// Token: 0x0400167B RID: 5755
+	[Token(Token = "0x40014E9")]
+	public const float CREEP_ZOOM_OUT_DELAY = 0.13f;
+
+	// Token: 0x0400167C RID: 5756
+	[Token(Token = "0x40014EA")]
+	public const float CREEP_ZOOM_OUT_SPEED = 0.4f;
+
+	// Token: 0x0400167D RID: 5757
+	[Token(Token = "0x40014EB")]
+	public const float CREEP_ZOOM_IN_SPEED = 5f;
+
+	// Token: 0x0400167E RID: 5758
+	[Token(Token = "0x40014EC")]
+	public const float MOLE_MOVE_SPEED = 25f;
+
+	// Token: 0x0400167F RID: 5759
+	[Token(Token = "0x40014ED")]
+	public const float MOLE_DIVE_TIME = 2.7f;
+
+	// Token: 0x04001680 RID: 5760
+	[Token(Token = "0x40014EE")]
+	public const float MOUSE_DIST_FROM_GUN_MIN = 2f;
+
+	// Token: 0x04001681 RID: 5761
+	[Token(Token = "0x40014EF")]
+	public const float MOUSE_DIST_FROM_GUN_MAX = 60f;
+
+	// Token: 0x04001682 RID: 5762
+	[Token(Token = "0x40014F0")]
+	public const float PLAYER_NEAR_LOOT_CHECK_DISTANCE = 7f;
+
+	// Token: 0x04001683 RID: 5763
+	[Token(Token = "0x40014F1")]
+	public const float PLAYER_NEAR_ART_CHECK_DISTANCE = 8.5f;
+
+	// Token: 0x04001684 RID: 5764
+	[Token(Token = "0x40014F2")]
+	public const float PLAYER_NEAR_EAT_BANANA_CHECK_DISTANCE = 10f;
+
+	// Token: 0x04001685 RID: 5765
+	[Token(Token = "0x40014F3")]
+	public const float PLAYER_NEAR_VEHICLE_CHECK_DISTANCE = 10f;
+
+	// Token: 0x04001686 RID: 5766
+	[Token(Token = "0x40014F4")]
+	public const float PLAYER_NEAR_CRATE_CHECK_DISTANCE = 10f;
+
+	// Token: 0x04001687 RID: 5767
+	[Token(Token = "0x40014F5")]
+	public const float PLAYER_NEAR_CAPTURE_NODE_CHECK_DISTANCE_X = 5.5f;
+
+	// Token: 0x04001688 RID: 5768
+	[Token(Token = "0x40014F6")]
+	public const float PLAYER_NEAR_CAPTURE_NODE_CHECK_DISTANCE_Y = 4.1f;
+
+	// Token: 0x04001689 RID: 5769
+	[Token(Token = "0x40014F7")]
+	public const float PLAYER_NEAR_PYRAMID_SARCOPHAGUS_CHECK_DISTANCE = 14f;
+
+	// Token: 0x0400168A RID: 5770
+	[Token(Token = "0x40014F8")]
+	public const float PLAYER_NEAR_NPC_CHECK_DISTANCE = 12f;
+
+	// Token: 0x0400168B RID: 5771
+	[Token(Token = "0x40014F9")]
+	public const float PLAYER_NEAR_CLAM_CHECK_DISTANCE = 9.8f;
+
+	// Token: 0x0400168C RID: 5772
+	[Token(Token = "0x40014FA")]
+	public const float PLAYER_NEAR_CLAM_CHECK_OFFSET_Y = 3f;
+
+	// Token: 0x0400168D RID: 5773
+	[Token(Token = "0x40014FB")]
+	public const float PARACHUTE_FLIGHT_SPEED = 5.2f;
+
+	// Token: 0x0400168E RID: 5774
+	[Token(Token = "0x40014FC")]
+	public const float PARACHUTE_FLIGHT_SPEED_NON_DIVING = 3.9f;
+
+	// Token: 0x0400168F RID: 5775
+	[Token(Token = "0x40014FD")]
+	public const float PARACHUTE_FLIGHT_SPEED_DIVING = 11f;
+
+	// Token: 0x04001690 RID: 5776
+	[Token(Token = "0x40014FE")]
+	public const float PARACHUTE_FLIGHT_STARTING_HEIGHT = 66f;
+
+	// Token: 0x04001691 RID: 5777
+	[Token(Token = "0x40014FF")]
+	public const float PARACHUTE_SPLAT_TIME = 1.3f;
+
+	// Token: 0x04001692 RID: 5778
+	[Token(Token = "0x4001500")]
+	public const float AFTER_DEATH_TIME_TILL_EXPLODE = 1.5f;
+
+	// Token: 0x04001693 RID: 5779
+	[Token(Token = "0x4001501")]
+	public const float AFTER_DEATH_TIME_STOP_PLAYER_ANIMATOR = 3f;
+
+	// Token: 0x04001694 RID: 5780
+	[Token(Token = "0x4001502")]
+	public const float PROJECTILE_Z_HEIGHT = 3f;
+
+	// Token: 0x04001695 RID: 5781
+	[Token(Token = "0x4001503")]
+	public const float PROJECTILE_CHARGED_MIN_DIST_PERCENT = 0.08f;
+
+	// Token: 0x04001696 RID: 5782
+	[Token(Token = "0x4001504")]
+	public const float PROJECTILE_CHARGED_MIN_SPEED_PERCENT = 0.65f;
+
+	// Token: 0x04001697 RID: 5783
+	[Token(Token = "0x4001505")]
+	public const float PROJECTILE_CHARGED_MIN_DAMAGE_PERCENT = 0.5f;
+
+	// Token: 0x04001698 RID: 5784
+	[Token(Token = "0x4001506")]
+	public const short WEAPON_DEFAULT_MELEE_INDEX = 0;
+
+	// Token: 0x04001699 RID: 5785
+	[Token(Token = "0x4001507")]
+	public const byte EQUIPMENT_DEFAULT_INDEX = 2;
+
+	// Token: 0x0400169A RID: 5786
+	[Token(Token = "0x4001508")]
+	public const float RECOIL_DEG_RESET_RATE_DEFAULT = 10f;
+
+	// Token: 0x0400169B RID: 5787
+	[Token(Token = "0x4001509")]
+	public const float RECOIL_TIME_AFTER_SHOOT_BEGIN_RESET_SLOW = 0.16f;
+
+	// Token: 0x0400169C RID: 5788
+	[Token(Token = "0x400150A")]
+	public const float RECOIL_TIME_AFTER_SHOOT_BEGIN_RESET_FAST = 0.2f;
+
+	// Token: 0x0400169D RID: 5789
+	[Token(Token = "0x400150B")]
+	public const float RECOIL_ROLL_MIN_SPREAD_DEFAULT = 1.5f;
+
+	// Token: 0x0400169E RID: 5790
+	[Token(Token = "0x400150C")]
+	public const float RECOIL_ROLL_CREEP_MIN_SPREAD_DEFAULT = 0.5f;
+
+	// Token: 0x0400169F RID: 5791
+	[Token(Token = "0x400150D")]
+	public const int ARMOR1_SPAWN = 1;
+
+	// Token: 0x040016A0 RID: 5792
+	[Token(Token = "0x400150E")]
+	public const int ARMOR2_SPAWN = 2;
+
+	// Token: 0x040016A1 RID: 5793
+	[Token(Token = "0x400150F")]
+	public const int ARMOR3_SPAWN = 3;
+
+	// Token: 0x040016A2 RID: 5794
+	[Token(Token = "0x4001510")]
+	public const float ARMOR1_DAMAGE_PEN = 0.6f;
+
+	// Token: 0x040016A3 RID: 5795
+	[Token(Token = "0x4001511")]
+	public const float ARMOR2_DAMAGE_PEN = 0.5f;
+
+	// Token: 0x040016A4 RID: 5796
+	[Token(Token = "0x4001512")]
+	public const float ARMOR3_DAMAGE_PEN = 0.4f;
+
+	// Token: 0x040016A5 RID: 5797
+	[Token(Token = "0x4001513")]
+	public const float ARMOR_OVERKILL_1TICK_PEN = 0.25f;
+
+	// Token: 0x040016A6 RID: 5798
+	[Token(Token = "0x4001514")]
+	public const float ARMOR_OVERKILL_2TICK_PEN = 0.45f;
+
+	// Token: 0x040016A7 RID: 5799
+	[Token(Token = "0x4001515")]
+	public const float HEALING_DRINK_STARTING = 25f;
+
+	// Token: 0x040016A8 RID: 5800
+	[Token(Token = "0x4001516")]
+	public const float HEALING_DRINK_MAX = 200f;
+
+	// Token: 0x040016A9 RID: 5801
+	[Token(Token = "0x4001517")]
+	public const float HEALING_DRINK_RATE = 9.5f;
+
+	// Token: 0x040016AA RID: 5802
+	[Token(Token = "0x4001518")]
+	public const float HEALING_DRINK_START_DELAY = 1.5f;
+
+	// Token: 0x040016AB RID: 5803
+	[Token(Token = "0x4001519")]
+	public const short HEALING_DRINK_AMOUNT_SMALL = 10;
+
+	// Token: 0x040016AC RID: 5804
+	[Token(Token = "0x400151A")]
+	public const short HEALING_DRINK_AMOUNT_MEDIUM = 20;
+
+	// Token: 0x040016AD RID: 5805
+	[Token(Token = "0x400151B")]
+	public const short HEALING_DRINK_AMOUNT_LARGE = 40;
+
+	// Token: 0x040016AE RID: 5806
+	[Token(Token = "0x400151C")]
+	public const float HEALING_AND_EMOTING_MOVEMENT_TOLERANCE = 4f;
+
+	// Token: 0x040016AF RID: 5807
+	[Token(Token = "0x400151D")]
+	public const int DUCT_TAPE_SPAWN_AMT = 1;
+
+	// Token: 0x040016B0 RID: 5808
+	[Token(Token = "0x400151E")]
+	public const int DUCT_TAPE_MAX = 5;
+
+	// Token: 0x040016B1 RID: 5809
+	[Token(Token = "0x400151F")]
+	public const byte DUCT_TAPE_ARMOR_REPAIR = 1;
+
+	// Token: 0x040016B2 RID: 5810
+	[Token(Token = "0x4001520")]
+	public const float DUCT_TAPE_REPAIR_TIME = 3.15f;
+
+	// Token: 0x040016B3 RID: 5811
+	[Token(Token = "0x4001521")]
+	public const float PICKING_UP_TEAMMATE_MOVEMENT_TOLERANCE = 3f;
+
+	// Token: 0x040016B4 RID: 5812
+	[Token(Token = "0x4001522")]
+	public const float BEING_PICKED_UP_DIST = 7.4f;
+
+	// Token: 0x040016B5 RID: 5813
+	[Token(Token = "0x4001523")]
+	public const float TEAM_PICKUP_TIME = 6f;
+
+	// Token: 0x040016B6 RID: 5814
+	[Token(Token = "0x4001524")]
+	public const byte VEHICLE_HAMSTER_BALL_HP_STARTING = 3;
+
+	// Token: 0x040016B7 RID: 5815
+	[Token(Token = "0x4001525")]
+	public const byte VEHICLE_HAMSTER_BALL_HP_CRACKED1 = 2;
+
+	// Token: 0x040016B8 RID: 5816
+	[Token(Token = "0x4001526")]
+	public const byte VEHICLE_HAMSTER_BALL_HP_CRACKED2 = 1;
+
+	// Token: 0x040016B9 RID: 5817
+	[Token(Token = "0x4001527")]
+	public const float VEHICLE_EXITED_PLAYER_NO_SHOOT_TIME = 0.25f;
+
+	// Token: 0x040016BA RID: 5818
+	[Token(Token = "0x4001528")]
+	public const float EMU_ATTACK_SPEED = 0.7f;
+
+	// Token: 0x040016BB RID: 5819
+	[Token(Token = "0x4001529")]
+	public const float EMU_ATTACK_TIME = 0.23f;
+
+	// Token: 0x040016BC RID: 5820
+	[Token(Token = "0x400152A")]
+	public const float EMU_ATTACK_HIT_CHECK_DELAY = 0.09f;
+
+	// Token: 0x040016BD RID: 5821
+	[Token(Token = "0x400152B")]
+	public const float EMU_WHIP_SPEED_TIME = 3f;
+
+	// Token: 0x040016BE RID: 5822
+	[Token(Token = "0x400152C")]
+	public const float EMU_WHIP_COOLDOWN = 6f;
+
+	// Token: 0x040016BF RID: 5823
+	[Token(Token = "0x400152D")]
+	public const float EMU_LOOKAT_DISTANCE = 40f;
+
+	// Token: 0x040016C0 RID: 5824
+	[Token(Token = "0x400152E")]
+	public const float EMU_LOOKAT_HEAD_BUFFER = 8f;
+
+	// Token: 0x040016C1 RID: 5825
+	[Token(Token = "0x400152F")]
+	public const float EMU_HIT_CONSIDERED_MINOR = 11f;
+
+	// Token: 0x040016C2 RID: 5826
+	[Token(Token = "0x4001530")]
+	public const float PLAYER_COLLISION_X_LEFT = 3f;
+
+	// Token: 0x040016C3 RID: 5827
+	[Token(Token = "0x4001531")]
+	public const float PLAYER_COLLISION_X_RIGHT = 3.4f;
+
+	// Token: 0x040016C4 RID: 5828
+	[Token(Token = "0x4001532")]
+	public const float PLAYER_COLLISION_Y_BELOW = 1.5f;
+
+	// Token: 0x040016C5 RID: 5829
+	[Token(Token = "0x4001533")]
+	public const float PLAYER_COLLISION_Y_ABOVE = 1.9f;
+
+	// Token: 0x040016C6 RID: 5830
+	[Token(Token = "0x4001534")]
+	public const float PLAYER_PLAYER_COLLISION_SIZE_FACTOR = 0.5f;
+
+	// Token: 0x040016C7 RID: 5831
+	[Token(Token = "0x4001535")]
+	public const float PLAYER_PLAYER_COLLISION_SIZE_FACTOR_ABOVE = 0.7f;
+
+	// Token: 0x040016C8 RID: 5832
+	[Token(Token = "0x4001536")]
+	public const float PLAYER_STUCK_IN_PLAYER_MOVE_FACTOR = 0.28f;
+
+	// Token: 0x040016C9 RID: 5833
+	[Token(Token = "0x4001537")]
+	public const float MELEE_RECT_X_OFFSET = 1f;
+
+	// Token: 0x040016CA RID: 5834
+	[Token(Token = "0x4001538")]
+	public const float MELEE_RECT_EXTRA_HEIGHT = 9f;
+
+	// Token: 0x040016CB RID: 5835
+	[Token(Token = "0x4001539")]
+	public const float MELEE_RECT_BOTTOM_OFFSET = -3f;
+
+	// Token: 0x040016CC RID: 5836
+	[Token(Token = "0x400153A")]
+	public const float MELEE_RECT_RANGE_X = 9f;
+
+	// Token: 0x040016CD RID: 5837
+	[Token(Token = "0x400153B")]
+	public const float MELEE_RECT_RANGE_Y = 8f;
+
+	// Token: 0x040016CE RID: 5838
+	[Token(Token = "0x400153C")]
+	public const float PLAYER_HIT_HALF_WIDTH = 2.43f;
+
+	// Token: 0x040016CF RID: 5839
+	[Token(Token = "0x400153D")]
+	public const float PLAYER_HIT_HEIGHT = 8.4f;
+
+	// Token: 0x040016D0 RID: 5840
+	[Token(Token = "0x400153E")]
+	public const float PLAYER_HIT_HAMSTER_BALL_HALF_WIDTH = 4.86f;
+
+	// Token: 0x040016D1 RID: 5841
+	[Token(Token = "0x400153F")]
+	public const float PLAYER_HIT_HAMSTER_BALL_HEIGHT = 12.7f;
+
+	// Token: 0x040016D2 RID: 5842
+	[Token(Token = "0x4001540")]
+	public const float PLAYER_HIT_ROUGH_EMU_HALF_WIDTH = 16f;
+
+	// Token: 0x040016D3 RID: 5843
+	[Token(Token = "0x4001541")]
+	public const float PLAYER_HIT_ROUGH_EMU_MIN_Y_OFFSET = -3f;
+
+	// Token: 0x040016D4 RID: 5844
+	[Token(Token = "0x4001542")]
+	public const float PLAYER_HIT_ROUGH_EMU_HEIGHT = 31f;
+
+	// Token: 0x040016D5 RID: 5845
+	[Token(Token = "0x4001543")]
+	public const float EMU_COLLISION_X_LEFT = 4.5f;
+
+	// Token: 0x040016D6 RID: 5846
+	[Token(Token = "0x4001544")]
+	public const float EMU_COLLISION_X_RIGHT = 4.5f;
+
+	// Token: 0x040016D7 RID: 5847
+	[Token(Token = "0x4001545")]
+	public const float EMU_COLLISION_Y_BELOW = 1.8f;
+
+	// Token: 0x040016D8 RID: 5848
+	[Token(Token = "0x4001546")]
+	public const float EMU_COLLISION_Y_ABOVE = 2.5f;
+
+	// Token: 0x040016D9 RID: 5849
+	[Token(Token = "0x4001547")]
+	public const float PLAYER_HIT_ROUGH_MIN_HALF_WIDTH = 10f;
+
+	// Token: 0x040016DA RID: 5850
+	[Token(Token = "0x4001548")]
+	public const float PLAYER_HIT_ROUGH_MIN_Y_OFFSET = -3f;
+
+	// Token: 0x040016DB RID: 5851
+	[Token(Token = "0x4001549")]
+	public const float PLAYER_HIT_ROUGH_MIN_HEIGHT = 20f;
+
+	// Token: 0x040016DC RID: 5852
+	[Token(Token = "0x400154A")]
+	public const float VEHICLE_COLLISION_HAMSTER_BALL_HALF_WIDTH = 6f;
+
+	// Token: 0x040016DD RID: 5853
+	[Token(Token = "0x400154B")]
+	public const float VEHICLE_COLLISION_HAMSTER_BALL_HALF_HEIGHT = 3.8f;
+
+	// Token: 0x040016DE RID: 5854
+	[Token(Token = "0x400154C")]
+	public const float VEHICLE_COLLISION_HAMSTER_BALL_Y_OFFSET = 2f;
+
+	// Token: 0x040016DF RID: 5855
+	[Token(Token = "0x400154D")]
+	public const short PLAYER_ID_GAS_CLOUD = -2;
+
+	// Token: 0x040016E0 RID: 5856
+	[Token(Token = "0x400154E")]
+	public const short PLAYER_ID_ACT_OF_GOD = -3;
+
+	// Token: 0x040016E1 RID: 5857
+	[Token(Token = "0x400154F")]
+	public const short PLAYER_ID_BANAN_EVENT = -4;
+
+	// Token: 0x040016E2 RID: 5858
+	[Token(Token = "0x4001550")]
+	public const short PLAYER_ID_ISBN_WIN = -5;
+
+	// Token: 0x040016E3 RID: 5859
+	[Token(Token = "0x4001551")]
+	public const short WEAPON_ID_VEHICLE_HAMSTER_BALL = -2;
+
+	// Token: 0x040016E4 RID: 5860
+	[Token(Token = "0x4001552")]
+	public const short WEAPON_ID_ENVIRONMENT_EXPLODE = -3;
+
+	// Token: 0x040016E5 RID: 5861
+	[Token(Token = "0x4001553")]
+	public const short WEAPON_ID_EMU = -4;
+
+	// Token: 0x040016E6 RID: 5862
+	[Token(Token = "0x4001554")]
+	public const float VEHICLE_HAMSTER_BALL_MIN_SPEED_FOR_DAMAGE = 15.25f;
+
+	// Token: 0x040016E7 RID: 5863
+	[Token(Token = "0x4001555")]
+	public const float VEHICLE_HAMSTER_BALL_DAMAGE_MAX = 100f;
+
+	// Token: 0x040016E8 RID: 5864
+	[Token(Token = "0x4001556")]
+	public const float VEHICLE_HAMSTER_BALL_DAMAGE_INTERVAL = 0.8f;
+
+	// Token: 0x040016E9 RID: 5865
+	[Token(Token = "0x4001557")]
+	public const float BANANA_STUN_DURATION = 2f;
+
+	// Token: 0x040016EA RID: 5866
+	[Token(Token = "0x4001558")]
+	public const float POISON_TICK_TIME = 0.6f;
+
+	// Token: 0x040016EB RID: 5867
+	[Token(Token = "0x4001559")]
+	public const double HEALING_TICK_RATE = 0.5;
+
+	// Token: 0x040016EC RID: 5868
+	[Token(Token = "0x400155A")]
+	public const int EQUIPPED_EMOTE_COUNT = 6;
+
+	// Token: 0x040016ED RID: 5869
+	[Token(Token = "0x400155B")]
+	public const float AMMO_SPAWN_X_OFFSET_FROM_GUN = 7f;
+
+	// Token: 0x040016EE RID: 5870
+	[Token(Token = "0x400155C")]
+	public const float AMMO_SPAWN_Y_OFFSET_FROM_GUN = 4f;
+
+	// Token: 0x040016EF RID: 5871
+	[Token(Token = "0x400155D")]
+	public const float FLIGHT_SPEED = 102f;
+
+	// Token: 0x040016F0 RID: 5872
+	[Token(Token = "0x400155E")]
+	public const float FLIGHT_ALLOW_DROP_DELAY_SECS = 3f;
+
+	// Token: 0x040016F1 RID: 5873
+	[Token(Token = "0x400155F")]
+	public const float PARACHUTE_DIVE_DELAY_SECS = 1f;
+
+	// Token: 0x040016F2 RID: 5874
+	[Token(Token = "0x4001560")]
+	public const float PARACHUTE_NO_DIVE_HEIGHT = 5f;
+
+	// Token: 0x040016F3 RID: 5875
+	[Token(Token = "0x4001561")]
+	public const float CAPTURE_NODE_TIME = 10f;
+
+	// Token: 0x040016F4 RID: 5876
+	[Token(Token = "0x4001562")]
+	public const float CAPTURE_NODE_BUFF_DIST = 44f;
+
+	// Token: 0x040016F5 RID: 5877
+	[Token(Token = "0x4001563")]
+	public const float SVR_MODE_DOWNED_SPEED_BONUS = 1.25f;
+
+	// Token: 0x040016F6 RID: 5878
+	[Token(Token = "0x4001564")]
+	public const float CAPTURE_NODE_HP_REGEN_PER_SEC = 4f;
+
+	// Token: 0x040016F7 RID: 5879
+	[Token(Token = "0x4001565")]
+	public const int CAMPFIRE_COLLISION_X_EXTENT = 6;
+
+	// Token: 0x040016F8 RID: 5880
+	[Token(Token = "0x4001566")]
+	public const int CAMPFIRE_COLLISION_Y_BELOW = 4;
+
+	// Token: 0x040016F9 RID: 5881
+	[Token(Token = "0x4001567")]
+	public const int CAMPFIRE_COLLISION_Y_ABOVE = 6;
+
+	// Token: 0x040016FA RID: 5882
+	[Token(Token = "0x4001568")]
+	public const int CAMPFIRE_HEAL_GRID_DIST = 17;
+
+	// Token: 0x040016FB RID: 5883
+	[Token(Token = "0x4001569")]
+	public const float CAMPFIRE_HEAL_RATE = 4f;
+
+	// Token: 0x040016FC RID: 5884
+	[Token(Token = "0x400156A")]
+	public const float CAMPFIRE_FIRE_TIME = 15f;
+
+	// Token: 0x040016FD RID: 5885
+	[Token(Token = "0x400156B")]
+	public const float COCONUT_HEAL_AMOUNT = 5f;
+
+	// Token: 0x040016FE RID: 5886
+	[Token(Token = "0x400156C")]
+	public const float COCONUT_HEAL_AMOUNT_EMU = 10f;
+
+	// Token: 0x040016FF RID: 5887
+	[Token(Token = "0x400156D")]
+	public const float MUSHROOM_HEAL_AMOUNT = 5f;
+
+	// Token: 0x04001700 RID: 5888
+	[Token(Token = "0x400156E")]
+	public const float MUSHROOM_HEAL_AMOUNT_EMU = 10f;
+
+	// Token: 0x04001701 RID: 5889
+	[Token(Token = "0x400156F")]
+	public const int CLAM_COLLISION_X_EXTENT = 4;
+
+	// Token: 0x04001702 RID: 5890
+	[Token(Token = "0x4001570")]
+	public const int CLAM_COLLISION_Y_BELOW = 1;
+
+	// Token: 0x04001703 RID: 5891
+	[Token(Token = "0x4001571")]
+	public const int CLAM_COLLISION_Y_ABOVE = 5;
+
+	// Token: 0x04001704 RID: 5892
+	[Token(Token = "0x4001572")]
+	public const int CLAM_Z_ORDER_OFFSET = 3;
+
+	// Token: 0x04001705 RID: 5893
+	[Token(Token = "0x4001573")]
+	public const float CLAM_X_OFFSET_ITEM_DROP = 10f;
+
+	// Token: 0x04001706 RID: 5894
+	[Token(Token = "0x4001574")]
+	public const float SWITCH_WEAPON_TIME_FAST = 0.29f;
+
+	// Token: 0x04001707 RID: 5895
+	[Token(Token = "0x4001575")]
+	public const float SWITCH_WEAPON_TIME_SLOW = 0.48f;
+
+	// Token: 0x04001708 RID: 5896
+	[Token(Token = "0x4001576")]
+	public const float BANAN_CAVE_BANANA_SPAWN_HEIGHT = 38f;
+
+	// Token: 0x04001709 RID: 5897
+	[Token(Token = "0x4001577")]
+	public const float BANAN_CAVE_BANANA_FALL_SPEED = -28f;
+
+	// Token: 0x0400170A RID: 5898
+	[Token(Token = "0x4001578")]
+	public const float CRABS_AREA_WIDTH = 45f;
+
+	// Token: 0x0400170B RID: 5899
+	[Token(Token = "0x4001579")]
+	public const float CRABS_AREA_HEIGHT = 30f;
+
+	// Token: 0x0400170C RID: 5900
+	[Token(Token = "0x400157A")]
+	public const float CRABS_MOVE_SPEED = 6f;
+
+	// Token: 0x0400170D RID: 5901
+	[Token(Token = "0x400157B")]
+	public const float SHOOTING_GALLERY_HORIZ_RAIL_DIST = 80f;
+
+	// Token: 0x0400170E RID: 5902
+	[Token(Token = "0x400157C")]
+	public const float SHOOTING_GALLERY_VERT_RAIL_DIST = -22f;
+
+	// Token: 0x0400170F RID: 5903
+	[Token(Token = "0x400157D")]
+	public const float SHOOTING_GALLERY_RAIL_SPEED = 12f;
+
+	// Token: 0x04001710 RID: 5904
+	[Token(Token = "0x400157E")]
+	public const double SHOOTING_GALLERY_HORIZ_SPAWN_RATE = 2.0;
+
+	// Token: 0x04001711 RID: 5905
+	[Token(Token = "0x400157F")]
+	public const float SHOOTING_GALLERY_SCOREZONE_WIDTH_HALF = 34.5f;
+
+	// Token: 0x04001712 RID: 5906
+	[Token(Token = "0x4001580")]
+	public const float SHOOTING_GALLERY_SCOREZONE_HEIGHT_HALF = 10f;
+
+	// Token: 0x04001713 RID: 5907
+	[Token(Token = "0x4001581")]
+	public const float SHOOTING_GALLERY_TARGETZONE_WIDTH_HALF = 34.5f;
+
+	// Token: 0x04001714 RID: 5908
+	[Token(Token = "0x4001582")]
+	public const float SHOOTING_GALLERY_TARGETZONE_HEIGHT_HALF = 32f;
+
+	// Token: 0x04001715 RID: 5909
+	[Token(Token = "0x4001583")]
+	public const float SHOOTING_GALLERY_TARGET_HITBOX_WIDTH_HALF = 3f;
+
+	// Token: 0x04001716 RID: 5910
+	[Token(Token = "0x4001584")]
+	public const float SHOOTING_GALLERY_TARGET_HITBOX_HEIGHT_HALF = 1f;
+
+	// Token: 0x04001717 RID: 5911
+	[Token(Token = "0x4001585")]
+	public const short SHOOTING_GALLERY_PLAYER_TARGET_POINTS = 5;
+
+	// Token: 0x04001718 RID: 5912
+	[Token(Token = "0x4001586")]
+	[FieldOffset(Offset = "0x8")]
+	public static string[] SHOOTING_GALLERY_TARGETS_HORIZ_LEFT;
+
+	// Token: 0x04001719 RID: 5913
+	[Token(Token = "0x4001587")]
+	[FieldOffset(Offset = "0x10")]
+	public static string[] SHOOTING_GALLERY_TARGETS_HORIZ_RIGHT;
+
+	// Token: 0x0400171A RID: 5914
+	[Token(Token = "0x4001588")]
+	[FieldOffset(Offset = "0x18")]
+	public static string[] SHOOTING_GALLERY_TARGETS_VERT;
+
+	// Token: 0x0400171B RID: 5915
+	[Token(Token = "0x4001589")]
+	[FieldOffset(Offset = "0x20")]
+	public static string[] SHOOTING_GALLERY_TARGETS_STATIC;
+
+	// Token: 0x0400171C RID: 5916
+	[Token(Token = "0x400158A")]
+	public const sbyte LOBBY_WEAPON_LOOT_INFO_ID = -99;
+
+	// Token: 0x0400171D RID: 5917
+	[Token(Token = "0x400158B")]
+	public const int CHAT_MAX_LENGTH = 70;
+
+	// Token: 0x0400171E RID: 5918
+	[Token(Token = "0x400158C")]
+	public const float PYRAMID_SARCOPHAGUS_MIN_PRESS_TIME_BUFFER = 1.65f;
+
+	// Token: 0x0400171F RID: 5919
+	[Token(Token = "0x400158D")]
+	public const float NPC_INTERACT_MIN_TIME_BUFFER = 0.4f;
+
+	// Token: 0x04001720 RID: 5920
+	[Token(Token = "0x400158E")]
+	public const string CHALLENGES_DATA_KEY = "challengesData";
+
+	// Token: 0x04001721 RID: 5921
+	[Token(Token = "0x400158F")]
+	public const string BATTLE_PASS_KEY_TITLE_DATA = "BP_S0.5";
+
+	// Token: 0x04001722 RID: 5922
+	[Token(Token = "0x4001590")]
+	public const string BATTLE_PASS_KEY_PLAYER = "BP_S0.5";
+
+	// Token: 0x04001723 RID: 5923
+	[Token(Token = "0x4001591")]
+	public const string MILESTONES_KEY_TITLE_DATA = "Milestones5";
+
+	// Token: 0x04001724 RID: 5924
+	[Token(Token = "0x4001592")]
+	public const float ATTACHMENT_SPLITTER_BULLET_MULT_DEFAULT = 2f;
+
+	// Token: 0x04001725 RID: 5925
+	[Token(Token = "0x4001593")]
+	public const float ATTACHMENT_SPLITTER_BULLET_MULT_SHOTGUN = 1.5f;
+
+	// Token: 0x04001726 RID: 5926
+	[Token(Token = "0x4001594")]
+	public const float ATTACHMENT_SPLITTER_BULLET_DEGREE_OFFSET = 5f;
+
+	// Token: 0x04001727 RID: 5927
+	[Token(Token = "0x4001595")]
+	public const float ATTACHMENT_SPLITTER_DMG_MULT = 0.65f;
+
+	// Token: 0x04001728 RID: 5928
+	[Token(Token = "0x4001596")]
+	public const double ATTACHMENT_SPLITTER_ARMOR_BREAK_MULT = 0.5;
+
+	// Token: 0x04001729 RID: 5929
+	[Token(Token = "0x4001597")]
+	public const int ATTACHMENT_CLAW_SHOES_GRASS_CUT_X = 4;
+
+	// Token: 0x0400172A RID: 5930
+	[Token(Token = "0x4001598")]
+	public const int ATTACHMENT_CLAW_SHOES_GRASS_CUT_Y = 3;
+
+	// Token: 0x0400172B RID: 5931
+	[Token(Token = "0x4001599")]
+	public const double ATTACHMENT_CLAW_SHOES_GRASS_LOOT_MULT = 2.0;
+
+	// Token: 0x0400172C RID: 5932
+	[Token(Token = "0x400159A")]
+	public const float ATTACHMENT_BANAN_CHARM_HEAL_AMOUNT = 25f;
+
+	// Token: 0x0400172D RID: 5933
+	[Token(Token = "0x400159B")]
+	public const float ATTACHMENT_BANAN_CHARM_EAT_TIME_MIN = 0.6f;
+
+	// Token: 0x0400172E RID: 5934
+	[Token(Token = "0x400159C")]
+	public const float ATTACHMENT_MAGNET_AUTO_LOOT_DIST = 14f;
+
+	// Token: 0x0400172F RID: 5935
+	[Token(Token = "0x400159D")]
+	public const double ATTACHMENT_MAGNET_DESTRUCTIBLE_LOOT_MULT = 1.5;
+
+	// Token: 0x04001730 RID: 5936
+	[Token(Token = "0x400159E")]
+	public const float ATTACHMENT_NINJA_SHOES_CREEP_SPEED_MULT_ADD = 0.12f;
+
+	// Token: 0x04001731 RID: 5937
+	[Token(Token = "0x400159F")]
+	public const float ATTACHMENT_NINJA_SHOES_FOOTSTEP_SOUND_MULT = 0.5f;
+
+	// Token: 0x04001732 RID: 5938
+	[Token(Token = "0x40015A0")]
+	public const float ATTACHMENT_POISON_VIAL_MOVE_BONUS = 0.25f;
+
+	// Token: 0x04001733 RID: 5939
+	[Token(Token = "0x40015A1")]
+	public const float ATTACHMENT_POISON_VIAL_GAS_DAMAGE_FACTOR = 0.9f;
+
+	// Token: 0x04001734 RID: 5940
+	[Token(Token = "0x40015A2")]
+	public const float ATTACHMENT_ENHANCED_JUICE_HEAL_RATE = 1.25f;
+
+	// Token: 0x04001735 RID: 5941
+	[Token(Token = "0x40015A3")]
+	[FieldOffset(Offset = "0x28")]
+	public static string[] DECAL_LAYERS;
+
+	// Token: 0x04001736 RID: 5942
+	[Token(Token = "0x40015A4")]
+	public const string ANIMATION_KEY_PARACHUTE = "parachute/parachute";
+
+	// Token: 0x04001737 RID: 5943
+	[Token(Token = "0x40015A5")]
+	public const string ANIMATION_KEY_IDLE = "idle/idle";
+
+	// Token: 0x04001738 RID: 5944
+	[Token(Token = "0x40015A6")]
+	public const string ANIMATION_KEY_GRENADE_AIM = "aim/aim_grenade";
+
+	// Token: 0x04001739 RID: 5945
+	[Token(Token = "0x40015A7")]
+	public const string SLOT_KEY_MELEE_WEAPON = "weapon";
+
+	// Token: 0x0400173A RID: 5946
+	[Token(Token = "0x40015A8")]
+	public const string SLOT_KEY_GRENADE = "weapons/grenade";
+
+	// Token: 0x0400173B RID: 5947
+	[Token(Token = "0x40015A9")]
+	public const string SLOT_KEY_UMBRELLA_TOP = "umbrella_top";
+
+	// Token: 0x0400173C RID: 5948
+	[Token(Token = "0x40015AA")]
+	public const string SLOT_KEY_UMBRELLA_HANDLE = "umbrella_handle";
+
+	// Token: 0x0400173D RID: 5949
+	[Token(Token = "0x40015AB")]
+	public const string SLOT_KEY_HAIR = "hair";
+
+	// Token: 0x0400173E RID: 5950
+	[Token(Token = "0x40015AC")]
+	public const string SLOT_KEY_HAIR2 = "hair2";
+
+	// Token: 0x0400173F RID: 5951
+	[Token(Token = "0x40015AD")]
+	public const string SLOT_KEY_SHOE_R = "shoe_R";
+
+	// Token: 0x04001740 RID: 5952
+	[Token(Token = "0x40015AE")]
+	public const string SLOT_KEY_SHOE_L = "shoe_L";
+
+	// Token: 0x04001741 RID: 5953
+	[Token(Token = "0x40015AF")]
+	public const string SLOT_KEY_JUICE_CUP = "healthcup";
+
+	// Token: 0x04001742 RID: 5954
+	[Token(Token = "0x40015B0")]
+	public const string SLOT_KEY_JUICE_CUP_ATTACHMENT_DEFAULT = "health_cup";
+
+	// Token: 0x04001743 RID: 5955
+	[Token(Token = "0x40015B1")]
+	public const string SLOT_KEY_JUICE_CUP_ATTACHMENT_ENHANCED = "health_cup_golden";
+
+	// Token: 0x04001744 RID: 5956
+	[Token(Token = "0x40015B2")]
+	public const string SLOT_KEY_NECK_ATTACHMENTS = "neck_attachments";
+
+	// Token: 0x04001745 RID: 5957
+	[Token(Token = "0x40015B3")]
+	public const string BONE_NAME_WEAPON = "weapon_main";
+
+	// Token: 0x04001746 RID: 5958
+	[Token(Token = "0x40015B4")]
+	public const string BONE_NAME_WEAPON_LOW = "weapon_low";
+
+	// Token: 0x04001747 RID: 5959
+	[Token(Token = "0x40015B5")]
+	public const string BONE_NAME_MELEE_WEAPON_VFX = "LOC_melee_VFX";
+
+	// Token: 0x04001748 RID: 5960
+	[Token(Token = "0x40015B6")]
+	public const string BONE_NAME_MAIN_HAND = "hand_R";
+
+	// Token: 0x04001749 RID: 5961
+	[Token(Token = "0x40015B7")]
+	public const string BONE_NAME_OFF_HAND = "hand_L";
+
+	// Token: 0x0400174A RID: 5962
+	[Token(Token = "0x40015B8")]
+	public const string BONE_NAME_TARGET = "TARGET";
+
+	// Token: 0x0400174B RID: 5963
+	[Token(Token = "0x40015B9")]
+	public const string BONE_NAME_MAIN = "MAIN";
+
+	// Token: 0x0400174C RID: 5964
+	[Token(Token = "0x40015BA")]
+	public const string BONE_NAME_HEAD = "head";
+
+	// Token: 0x0400174D RID: 5965
+	[Token(Token = "0x40015BB")]
+	public const string BONE_NAME_MELEE_WEAPON = "weapon";
+
+	// Token: 0x0400174E RID: 5966
+	[Token(Token = "0x40015BC")]
+	public const string BONE_NAME_UMBRELLA = "umbrella";
+
+	// Token: 0x0400174F RID: 5967
+	[Token(Token = "0x40015BD")]
+	public const string BONE_NAME_FOOT_LEFT = "foot_L";
+
+	// Token: 0x04001750 RID: 5968
+	[Token(Token = "0x40015BE")]
+	public const string BONE_NAME_FOOT_RIGHT = "foot_R";
+
+	// Token: 0x04001751 RID: 5969
+	[Token(Token = "0x40015BF")]
+	public const string BONE_NAME_LEFT_ARM = "arm1_L";
+
+	// Token: 0x04001752 RID: 5970
+	[Token(Token = "0x40015C0")]
+	public const string SLOT_KEY_ARMOR = "bodyarmor_torso";
+
+	// Token: 0x04001753 RID: 5971
+	[Token(Token = "0x40015C1")]
+	public const string SLOT_KEY_HITBOX = "hitbox";
+
+	// Token: 0x04001754 RID: 5972
+	[Token(Token = "0x40015C2")]
+	public const string CURRENCY_CODE_TICKETS = "TI";
+
+	// Token: 0x04001755 RID: 5973
+	[Token(Token = "0x40015C3")]
+	public const string CURRENCY_CODE_TICKETS_XBOX = "T2";
+
+	// Token: 0x04001756 RID: 5974
+	[Token(Token = "0x40015C4")]
+	public const string CURRENCY_CODE_TICKETS_SONY = "T3";
+
+	// Token: 0x04001757 RID: 5975
+	[Token(Token = "0x40015C5")]
+	public const string CURRENCY_CODE_TICKETS_NINTENDO = "T4";
+
+	// Token: 0x04001758 RID: 5976
+	[Token(Token = "0x40015C6")]
+	public const string CURRENCY_CODE_COINS = "AC";
+
+	// Token: 0x04001759 RID: 5977
+	[Token(Token = "0x40015C7")]
+	public const int ANIMAL_PASS_COST = 550;
+
+	// Token: 0x0400175A RID: 5978
+	[Token(Token = "0x40015C8")]
+	public const string STORE_TICKETS_ID = "StoreTicketsInfo5";
+
+	// Token: 0x0400175B RID: 5979
+	[Token(Token = "0x40015C9")]
+	public const string STORE_COINS_ID = "StoreCoinsInfo4";
+
+	// Token: 0x0400175C RID: 5980
+	[Token(Token = "0x40015CA")]
+	public const string STORE_FEATURED_KEY = "featured";
+
+	// Token: 0x0400175D RID: 5981
+	[Token(Token = "0x40015CB")]
+	public const string STORE_DAILY_KEY = "daily";
+
+	// Token: 0x0400175E RID: 5982
+	[Token(Token = "0x40015CC")]
+	public const int ACCOUNT_LEVEL_MAX_INDEX_FOR_GEM = 998;
+
+	// Token: 0x0400175F RID: 5983
+	[Token(Token = "0x40015CD")]
+	[FieldOffset(Offset = "0x30")]
+	public static readonly int[] ACCOUNT_LEVEL_EXPERIENCE_TO_NEXT_LEVEL;
+
+	// Token: 0x04001760 RID: 5984
+	[Token(Token = "0x40015CE")]
+	[FieldOffset(Offset = "0x38")]
+	public static readonly HashSet<string> SUPPORTED_DNA;
+
+	// Token: 0x04001761 RID: 5985
+	[Token(Token = "0x40015CF")]
+	public const string STAT_NAME_ACCOUNT_LEVEL = "AccountLevelNew";
+
+	// Token: 0x04001762 RID: 5986
+	[Token(Token = "0x40015D0")]
+	public const string STAT_NAME_ACCOUNT_LEVEL_EXP = "AccountExpIntoCurrentLevelNew";
+
+	// Token: 0x04001763 RID: 5987
+	[Token(Token = "0x40015D1")]
+	public const string STAT_NAME_KILLS_SOLO = "Kills";
+
+	// Token: 0x04001764 RID: 5988
+	[Token(Token = "0x40015D2")]
+	public const string STAT_NAME_KILLS_DUO = "KillsDuos";
+
+	// Token: 0x04001765 RID: 5989
+	[Token(Token = "0x40015D3")]
+	public const string STAT_NAME_KILLS_SQUAD = "KillsSquads";
+
+	// Token: 0x04001766 RID: 5990
+	[Token(Token = "0x40015D4")]
+	public const string STAT_NAME_KILLS_32v32 = "KillsCustom1";
+
+	// Token: 0x04001767 RID: 5991
+	[Token(Token = "0x40015D5")]
+	public const string STAT_NAME_KILLS_MYSTERY = "KillsCustom2";
+
+	// Token: 0x04001768 RID: 5992
+	[Token(Token = "0x40015D6")]
+	public const string STAT_NAME_KILLS_MELEE = "MeleeKills";
+
+	// Token: 0x04001769 RID: 5993
+	[Token(Token = "0x40015D7")]
+	public const string STAT_NAME_KILLS_GRENADES = "GrenadeKills";
+
+	// Token: 0x0400176A RID: 5994
+	[Token(Token = "0x40015D8")]
+	public const string STAT_NAME_KILLS_HAMSTER = "VehicleKills";
+
+	// Token: 0x0400176B RID: 5995
+	[Token(Token = "0x40015D9")]
+	public const string STAT_NAME_KILLS_EMU = "EmuKills";
+
+	// Token: 0x0400176C RID: 5996
+	[Token(Token = "0x40015DA")]
+	public const string STAT_NAME_KILLS_PISTOL = "KillsPistol";
+
+	// Token: 0x0400176D RID: 5997
+	[Token(Token = "0x40015DB")]
+	public const string STAT_NAME_KILLS_DUAL_PISTOL = "KillsDualPistol";
+
+	// Token: 0x0400176E RID: 5998
+	[Token(Token = "0x40015DC")]
+	public const string STAT_NAME_KILLS_MAGNUM = "KillsMagnum";
+
+	// Token: 0x0400176F RID: 5999
+	[Token(Token = "0x40015DD")]
+	public const string STAT_NAME_KILLS_DEAGLE = "KillsDeagle";
+
+	// Token: 0x04001770 RID: 6000
+	[Token(Token = "0x40015DE")]
+	public const string STAT_NAME_KILLS_SILENCED_PISTOL = "KillsSilencedPistol";
+
+	// Token: 0x04001771 RID: 6001
+	[Token(Token = "0x40015DF")]
+	public const string STAT_NAME_KILLS_SHOTGUN = "KillsShotgun";
+
+	// Token: 0x04001772 RID: 6002
+	[Token(Token = "0x40015E0")]
+	public const string STAT_NAME_KILLS_JAG7 = "KillsJag7";
+
+	// Token: 0x04001773 RID: 6003
+	[Token(Token = "0x40015E1")]
+	public const string STAT_NAME_KILLS_SMG = "KillsSMG";
+
+	// Token: 0x04001774 RID: 6004
+	[Token(Token = "0x40015E2")]
+	public const string STAT_NAME_KILLS_THOMAS = "KillsThomas";
+
+	// Token: 0x04001775 RID: 6005
+	[Token(Token = "0x40015E3")]
+	public const string STAT_NAME_KILLS_AK = "KillsAK";
+
+	// Token: 0x04001776 RID: 6006
+	[Token(Token = "0x40015E4")]
+	public const string STAT_NAME_KILLS_M16 = "KillsM16";
+
+	// Token: 0x04001777 RID: 6007
+	[Token(Token = "0x40015E5")]
+	public const string STAT_NAME_KILLS_DART = "KillsDart";
+
+	// Token: 0x04001778 RID: 6008
+	[Token(Token = "0x40015E6")]
+	public const string STAT_NAME_KILLS_HUNTING_RIFLE = "KillsHuntingRifle";
+
+	// Token: 0x04001779 RID: 6009
+	[Token(Token = "0x40015E7")]
+	public const string STAT_NAME_KILLS_SNIPER = "KillsSniper";
+
+	// Token: 0x0400177A RID: 6010
+	[Token(Token = "0x40015E8")]
+	public const string STAT_NAME_KILLS_MINIGUN = "KillsMinigun";
+
+	// Token: 0x0400177B RID: 6011
+	[Token(Token = "0x40015E9")]
+	public const string STAT_NAME_KILLS_BOW = "KillsBow";
+
+	// Token: 0x0400177C RID: 6012
+	[Token(Token = "0x40015EA")]
+	public const string STAT_NAME_KILLS_CROSSBOW = "KillsCrossbow";
+
+	// Token: 0x0400177D RID: 6013
+	[Token(Token = "0x40015EB")]
+	public const string STAT_NAME_COCONUTS_ATE = "CoconutsAte";
+
+	// Token: 0x0400177E RID: 6014
+	[Token(Token = "0x40015EC")]
+	public const string STAT_NAME_MUSHROOMS_ATE = "MushroomsAte";
+
+	// Token: 0x0400177F RID: 6015
+	[Token(Token = "0x40015ED")]
+	public const string STAT_NAME_SKUNK_BOMB_DAMAGE = "SkunkBombDamageDealt";
+
+	// Token: 0x04001780 RID: 6016
+	[Token(Token = "0x40015EE")]
+	public const string STAT_NAME_BANANA_HITS = "BananaHits";
+
+	// Token: 0x04001781 RID: 6017
+	[Token(Token = "0x40015EF")]
+	public const string STAT_NAME_BANANA_HITS_ENEMY_ONLY = "BananaHitsEnemyOnly";
+
+	// Token: 0x04001782 RID: 6018
+	[Token(Token = "0x40015F0")]
+	public const string STAT_NAME_GRASS_CUT = "GrassCut";
+
+	// Token: 0x04001783 RID: 6019
+	[Token(Token = "0x40015F1")]
+	public const string STAT_NAME_HEALTH_JUICE_DRANK = "HealthJuiceDrank";
+
+	// Token: 0x04001784 RID: 6020
+	[Token(Token = "0x40015F2")]
+	public const string STAT_NAME_DUCT_TAPE_USED = "TapeUsed";
+
+	// Token: 0x04001785 RID: 6021
+	[Token(Token = "0x40015F3")]
+	public const string STAT_NAME_JUMP_ROLLS = "SuperJumpRolls";
+
+	// Token: 0x04001786 RID: 6022
+	[Token(Token = "0x40015F4")]
+	public const string STAT_NAME_ENEMY_ARMOR_BROKEN = "EnemyArmorBroken";
+
+	// Token: 0x04001787 RID: 6023
+	[Token(Token = "0x40015F5")]
+	public const string STAT_NAME_DESTRUCTIBLES_DESTROYED = "DestructiblesDestroyed";
+
+	// Token: 0x04001788 RID: 6024
+	[Token(Token = "0x40015F6")]
+	public const string STAT_NAME_MOLE_CRATES_OPENED = "MoleCrates";
+
+	// Token: 0x04001789 RID: 6025
+	[Token(Token = "0x40015F7")]
+	public const string STAT_NAME_CAMPFIRES_USED = "CampfiresUsed";
+
+	// Token: 0x0400178A RID: 6026
+	[Token(Token = "0x40015F8")]
+	public const string STAT_NAME_DAMAGE_DEALT = "DamageDealt";
+
+	// Token: 0x0400178B RID: 6027
+	[Token(Token = "0x40015F9")]
+	public const string STAT_NAME_DISTANCE_TRAVELED = "DistanceTraveled";
+
+	// Token: 0x0400178C RID: 6028
+	[Token(Token = "0x40015FA")]
+	public const string STAT_NAME_WINS_SOLO = "Wins";
+
+	// Token: 0x0400178D RID: 6029
+	[Token(Token = "0x40015FB")]
+	public const string STAT_NAME_WINS_DUOS = "WinsDuos";
+
+	// Token: 0x0400178E RID: 6030
+	[Token(Token = "0x40015FC")]
+	public const string STAT_NAME_WINS_SQUADS = "WinsSquads";
+
+	// Token: 0x0400178F RID: 6031
+	[Token(Token = "0x40015FD")]
+	public const string STAT_NAME_WINS_32v32 = "WinsCustom1";
+
+	// Token: 0x04001790 RID: 6032
+	[Token(Token = "0x40015FE")]
+	public const string STAT_NAME_WINS_MYSTERY = "WinsCustom2";
+
+	// Token: 0x04001791 RID: 6033
+	[Token(Token = "0x40015FF")]
+	public const string STAT_NAME_GAMES_SOLO = "Games";
+
+	// Token: 0x04001792 RID: 6034
+	[Token(Token = "0x4001600")]
+	public const string STAT_NAME_GAMES_DUO = "GamesDuos";
+
+	// Token: 0x04001793 RID: 6035
+	[Token(Token = "0x4001601")]
+	public const string STAT_NAME_GAMES_SQUAD = "GamesSquads";
+
+	// Token: 0x04001794 RID: 6036
+	[Token(Token = "0x4001602")]
+	public const string STAT_NAME_GAMES_32v32 = "GamesCustom1";
+
+	// Token: 0x04001795 RID: 6037
+	[Token(Token = "0x4001603")]
+	public const string STAT_NAME_GAMES_MYSTERY = "GamesCustom2";
+
+	// Token: 0x04001796 RID: 6038
+	[Token(Token = "0x4001604")]
+	public const string STAT_NAME_WINS_CHICKEN = "ChickenWins";
+
+	// Token: 0x04001797 RID: 6039
+	[Token(Token = "0x4001605")]
+	public const string STAT_NAME_WINS_TURKEY = "TurkeyWins";
+
+	// Token: 0x04001798 RID: 6040
+	[Token(Token = "0x4001606")]
+	public const string STAT_NAME_DEATHS_SOLO = "Deaths";
+
+	// Token: 0x04001799 RID: 6041
+	[Token(Token = "0x4001607")]
+	public const string STAT_NAME_DEATHS_DUO = "DeathsDuos";
+
+	// Token: 0x0400179A RID: 6042
+	[Token(Token = "0x4001608")]
+	public const string STAT_NAME_DEATHS_SQUAD = "DeathsSquads";
+
+	// Token: 0x0400179B RID: 6043
+	[Token(Token = "0x4001609")]
+	public const string STAT_NAME_DEATHS_32v32 = "DeathsCustom1";
+
+	// Token: 0x0400179C RID: 6044
+	[Token(Token = "0x400160A")]
+	public const string STAT_NAME_DEATHS_MYSTERY = "DeathsCustom2";
+
+	// Token: 0x0400179D RID: 6045
+	[Token(Token = "0x400160B")]
+	public const string STAT_NAME_MOST_KILLS_SOLO = "MostKills";
+
+	// Token: 0x0400179E RID: 6046
+	[Token(Token = "0x400160C")]
+	public const string STAT_NAME_MOST_KILLS_DUO = "MostKillsDuos";
+
+	// Token: 0x0400179F RID: 6047
+	[Token(Token = "0x400160D")]
+	public const string STAT_NAME_MOST_KILLS_SQUAD = "MostKillsSquads";
+
+	// Token: 0x040017A0 RID: 6048
+	[Token(Token = "0x400160E")]
+	public const string STAT_NAME_MOST_KILLS_32v32 = "MostKillsCustom1";
+
+	// Token: 0x040017A1 RID: 6049
+	[Token(Token = "0x400160F")]
+	public const string STAT_NAME_MOST_KILLS_MYSTERY = "MostKillsCustom2";
+
+	// Token: 0x040017A2 RID: 6050
+	[Token(Token = "0x4001610")]
+	public const string STAT_NAME_TOP5_SOLO = "Top5";
+
+	// Token: 0x040017A3 RID: 6051
+	[Token(Token = "0x4001611")]
+	public const string STAT_NAME_TOP3_DUO = "Top3Duos";
+
+	// Token: 0x040017A4 RID: 6052
+	[Token(Token = "0x4001612")]
+	public const string STAT_NAME_TOP2_SQUAD = "Top2Squads";
+
+	// Token: 0x040017A5 RID: 6053
+	[Token(Token = "0x4001613")]
+	public const string STAT_NAME_TOP2_MYSTERY = "Top2Custom2";
+
+	// Token: 0x040017A6 RID: 6054
+	[Token(Token = "0x4001614")]
+	public const string STAT_NAME_TIME_PLAYED = "TimePlayedSeconds";
+
+	// Token: 0x040017A7 RID: 6055
+	[Token(Token = "0x4001615")]
+	public const string STAT_NAME_WINS_PACIFIST_SOLO = "PacifistVictoriesSolo";
+
+	// Token: 0x040017A8 RID: 6056
+	[Token(Token = "0x4001616")]
+	public const string STAT_NAME_WINS_MELEE_SOLO = "MeleeVictoriesSolo";
+
+	// Token: 0x040017A9 RID: 6057
+	[Token(Token = "0x4001617")]
+	public const string STAT_NAME_WINS_NO_ARMOR_SOLO = "NoArmorVictoriesSolo";
+
+	// Token: 0x040017AA RID: 6058
+	[Token(Token = "0x4001618")]
+	public const string STAT_NAME_PRAISE_BANAN = "BananOfferings";
+
+	// Token: 0x040017AB RID: 6059
+	[Token(Token = "0x4001619")]
+	public const string STAT_NAME_NO_DANCING = "NoDancing";
+
+	// Token: 0x040017AC RID: 6060
+	[Token(Token = "0x400161A")]
+	public const string STAT_NAME_CRAB_DANCE = "CrabDance";
+
+	// Token: 0x040017AD RID: 6061
+	[Token(Token = "0x400161B")]
+	public const string STAT_NAME_STORYTIME_DONK = "StorytimeDonk";
+
+	// Token: 0x040017AE RID: 6062
+	[Token(Token = "0x400161C")]
+	public const string STAT_NAME_BARN_REBEL_DOOR = "BarnRebelDoor";
+
+	// Token: 0x040017AF RID: 6063
+	[Token(Token = "0x400161D")]
+	public const string STAT_NAME_RAT_GG = "RatGG";
+
+	// Token: 0x040017B0 RID: 6064
+	[Token(Token = "0x400161E")]
+	public const string STAT_NAME_SCARECROWS_DESTROYED = "Scarecrows";
+
+	// Token: 0x040017B1 RID: 6065
+	[Token(Token = "0x400161F")]
+	public const string STAT_NAME_EVENT_COLLECTING = "CandyCorn";
+
+	// Token: 0x040017B2 RID: 6066
+	[Token(Token = "0x4001620")]
+	public const string STAT_NAME_GALLERY_TARGETS_HIT = "GalleryTargetsHit";
+
+	// Token: 0x040017B3 RID: 6067
+	[Token(Token = "0x4001621")]
+	public const string STAT_NAME_BE_GALLERY_TARGET = "BeGalleryTarget";
+
+	// Token: 0x040017B4 RID: 6068
+	[Token(Token = "0x4001622")]
+	public const string STAT_NAME_DISTANCE_TRAVELED_ICE_WEEK2 = "DistanceTraveledIceW2";
+
+	// Token: 0x040017B5 RID: 6069
+	[Token(Token = "0x4001623")]
+	public const string STAT_NAME_PARACHUTE_SPLATS = "ParachuteSplats";
+
+	// Token: 0x040017B6 RID: 6070
+	[Token(Token = "0x4001624")]
+	public const string STAT_NAME_DANCING_IN_THE_RAIN = "DancingInTheRain";
+
+	// Token: 0x040017B7 RID: 6071
+	[Token(Token = "0x4001625")]
+	public const string STAT_NAME_NPC_LAB = "NPCLab";
+
+	// Token: 0x040017B8 RID: 6072
+	[Token(Token = "0x4001626")]
+	public const string STAT_NAME_NPC_SPHYNX = "NpcSphynx";
+
+	// Token: 0x040017B9 RID: 6073
+	[Token(Token = "0x4001627")]
+	public const string STAT_NAME_GALLERY_TARGETS_HIT_BOW = "GalleryTargetsHitBow";
+
+	// Token: 0x040017BA RID: 6074
+	[Token(Token = "0x4001628")]
+	public const string STAT_NAME_SPARROW_TRACKING_ONE_MATCH = "BowHitsOneMatch";
+
+	// Token: 0x040017BB RID: 6075
+	[Token(Token = "0x4001629")]
+	public const string STAT_NAME_CHEST_OPENS = "ChestOpens";
+
+	// Token: 0x040017BC RID: 6076
+	[Token(Token = "0x400162A")]
+	public const string STAT_NAME_FLAG_CAPS = "FlagCaps";
+
+	// Token: 0x040017BD RID: 6077
+	[Token(Token = "0x400162B")]
+	public const string STAT_NAME_HEALING = "Healing";
+
+	// Token: 0x040017BE RID: 6078
+	[Token(Token = "0x400162C")]
+	public const int LOOT_SPAWN_RNG_TOTAL = 100;
+
+	// Token: 0x040017BF RID: 6079
+	[Token(Token = "0x400162D")]
+	public const double LOOT_SPAWN_RNG_NOTHING = 28.0;
+
+	// Token: 0x040017C0 RID: 6080
+	[Token(Token = "0x400162E")]
+	public const double LOOT_SPAWN_RNG_ATTACHMENT = 33.0;
+
+	// Token: 0x040017C1 RID: 6081
+	[Token(Token = "0x400162F")]
+	public const double LOOT_SPAWN_RNG_HEALING_DRINK = 47.0;
+
+	// Token: 0x040017C2 RID: 6082
+	[Token(Token = "0x4001630")]
+	public const double LOOT_SPAWN_RNG_ARMOR = 59.0;
+
+	// Token: 0x040017C3 RID: 6083
+	[Token(Token = "0x4001631")]
+	public const double LOOT_SPAWN_RNG_DUCT_TAPE = 66.0;
+
+	// Token: 0x040017C4 RID: 6084
+	[Token(Token = "0x4001632")]
+	public const double LOOT_SPAWN_RNG_HEALING_DRINK_LVL1 = 55.0;
+
+	// Token: 0x040017C5 RID: 6085
+	[Token(Token = "0x4001633")]
+	public const double LOOT_SPAWN_RNG_HEALING_DRINK_LVL2 = 89.0;
+
+	// Token: 0x040017C6 RID: 6086
+	[Token(Token = "0x4001634")]
+	public const double LOOT_SPAWN_RNG_ARMOR_LVL1 = 65.0;
+
+	// Token: 0x040017C7 RID: 6087
+	[Token(Token = "0x4001635")]
+	public const double LOOT_SPAWN_RNG_ARMOR_LVL2 = 92.0;
+
+	// Token: 0x040017C8 RID: 6088
+	[Token(Token = "0x4001636")]
+	public const double LOOT_SPAWN_RNG_RARITY_NORMAL = 58.0;
+
+	// Token: 0x040017C9 RID: 6089
+	[Token(Token = "0x4001637")]
+	public const double LOOT_SPAWN_RNG_RARITY_UNCOMMON = 80.0;
+
+	// Token: 0x040017CA RID: 6090
+	[Token(Token = "0x4001638")]
+	public const double LOOT_SPAWN_RNG_RARITY_RARE = 91.0;
+
+	// Token: 0x040017CB RID: 6091
+	[Token(Token = "0x4001639")]
+	public const double LOOT_SPAWN_RNG_RARITY_EPIC = 97.0;
+
+	// Token: 0x040017CC RID: 6092
+	[Token(Token = "0x400163A")]
+	public const uint LOOT_SPAWN_GOOD_RNG_MIN_SPAWN = 20U;
+
+	// Token: 0x040017CD RID: 6093
+	[Token(Token = "0x400163B")]
+	public const uint LOOT_SPAWN_GOOD_RNG_MIN_HEALING_LVL = 15U;
+
+	// Token: 0x040017CE RID: 6094
+	[Token(Token = "0x400163C")]
+	public const uint LOOT_SPAWN_GOOD_RNG_MIN_ARMOR_LVL = 24U;
+
+	// Token: 0x040017CF RID: 6095
+	[Token(Token = "0x400163D")]
+	public const uint LOOT_SPAWN_GOOD_RNG_MIN_RARITY = 22U;
+
+	// Token: 0x040017D0 RID: 6096
+	[Token(Token = "0x400163E")]
+	public const uint CHEST_SPAWN_CHANCE = 33U;
+
+	// Token: 0x040017D1 RID: 6097
+	[Token(Token = "0x400163F")]
+	public const uint CHEST_ITEM_ROLL_MAX = 300U;
+
+	// Token: 0x040017D2 RID: 6098
+	[Token(Token = "0x4001640")]
+	public const uint CHEST_CHANCE_WEAPON = 286U;
+
+	// Token: 0x040017D3 RID: 6099
+	[Token(Token = "0x4001641")]
+	public const uint CHEST_CHANCE_ARMOR3 = 298U;
+
+	// Token: 0x040017D4 RID: 6100
+	[Token(Token = "0x4001642")]
+	public const uint CHEST_WEAPON_MIN_RARITY = 2U;
+
+	// Token: 0x040017D5 RID: 6101
+	[Token(Token = "0x4001643")]
+	public const uint CHEST_WEAPON_MAX_RARITY = 3U;
+
+	// Token: 0x040017D6 RID: 6102
+	[Token(Token = "0x4001644")]
+	public const double CHEST_OPEN_TIME = 1.0;
+
+	// Token: 0x040017D7 RID: 6103
+	[Token(Token = "0x4001645")]
+	public const int CLAM_ITEM_ROLL_MAX = 100;
+
+	// Token: 0x040017D8 RID: 6104
+	[Token(Token = "0x4001646")]
+	public const int CLAM_CHANCE_NADE = 30;
+
+	// Token: 0x040017D9 RID: 6105
+	[Token(Token = "0x4001647")]
+	public const int CLAM_CHANCE_TAPE = 62;
+
+	// Token: 0x040017DA RID: 6106
+	[Token(Token = "0x4001648")]
+	public const double CLAM_OPEN_TIME = 0.8;
+
+	// Token: 0x040017DB RID: 6107
+	[Token(Token = "0x4001649")]
+	public const int COCONUT_SPAWN_RNG_TOTAL = 100;
+
+	// Token: 0x040017DC RID: 6108
+	[Token(Token = "0x400164A")]
+	public const double COCONUT_SPAWN_RNG_NO_SPAWN = 65.0;
+
+	// Token: 0x040017DD RID: 6109
+	[Token(Token = "0x400164B")]
+	public const int MUSHROOM_SPAWN_RNG_TOTAL = 100;
+
+	// Token: 0x040017DE RID: 6110
+	[Token(Token = "0x400164C")]
+	public const double MUSHROOM_SPAWN_RNG_NO_SPAWN = 72.0;
+
+	// Token: 0x040017DF RID: 6111
+	[Token(Token = "0x400164D")]
+	public const int VEHICLE_SPAWN_RNG_TOTAL = 100;
+
+	// Token: 0x040017E0 RID: 6112
+	[Token(Token = "0x400164E")]
+	public const double VEHICLE_SPAWN_RNG_NO_SPAWN = 55.0;
+
+	// Token: 0x040017E1 RID: 6113
+	[Token(Token = "0x400164F")]
+	public const int EMU_SPAWN_RNG_TOTAL = 100;
+
+	// Token: 0x040017E2 RID: 6114
+	[Token(Token = "0x4001650")]
+	public const double EMU_SPAWN_RNG_NO_SPAWN = 69.0;
+
+	// Token: 0x040017E3 RID: 6115
+	[Token(Token = "0x4001651")]
+	public const string EVENT_CURRENCY = "E2";
+
+	// Token: 0x040017E4 RID: 6116
+	[Token(Token = "0x4001652")]
+	public const double EVENT_CURRENCY_PER_MINUTE_BASE = 24.0;
+
+	// Token: 0x040017E5 RID: 6117
+	[Token(Token = "0x4001653")]
+	public const bool EVENT_IS_ACTIVE = false;
+
+	// Token: 0x040017E6 RID: 6118
+	[Token(Token = "0x4001654")]
+	public const bool EVENT_IS_HALLOWEEN = false;
+
+	// Token: 0x040017E7 RID: 6119
+	[Token(Token = "0x4001655")]
+	public const bool EVENT_IS_XMAS = false;
+
+	// Token: 0x040017E8 RID: 6120
+	[Token(Token = "0x4001656")]
+	public const bool EVENT_IS_CNY = false;
+
+	// Token: 0x040017E9 RID: 6121
+	[Token(Token = "0x4001657")]
+	public const bool EVENT_IS_EASTER = true;
+
+	// Token: 0x040017EA RID: 6122
+	[Token(Token = "0x4001658")]
+	[FieldOffset(Offset = "0x40")]
+	public static DateTime EVENT_END_DATE;
+
+	// Token: 0x040017EB RID: 6123
+	[Token(Token = "0x4001659")]
+	public const uint EVENT_ITEM_SPAWN_AMOUNT_SOLO = 135U;
+
+	// Token: 0x040017EC RID: 6124
+	[Token(Token = "0x400165A")]
+	public const uint EVENT_ITEM_SPAWN_AMOUNT_DUO = 115U;
+
+	// Token: 0x040017ED RID: 6125
+	[Token(Token = "0x400165B")]
+	public const uint EVENT_ITEM_SPAWN_AMOUNT_SQUAD = 100U;
+
+	// Token: 0x040017EE RID: 6126
+	[Token(Token = "0x400165C")]
+	public const bool EVENT_ITEM_EMUS_CAN_EAT = true;
+
+	// Token: 0x040017EF RID: 6127
+	[Token(Token = "0x400165D")]
+	public const float EVENT_ITEM_HP_BOOST = 20f;
+
+	// Token: 0x040017F0 RID: 6128
+	[Token(Token = "0x400165E")]
+	public const uint CANDY_CORN_SPAWN_AMOUNT = 175U;
+
+	// Token: 0x040017F1 RID: 6129
+	[Token(Token = "0x400165F")]
+	public const short CANDY_CORN_COUNT_SMALL = 1;
+
+	// Token: 0x040017F2 RID: 6130
+	[Token(Token = "0x4001660")]
+	public const short CANDY_CORN_COUNT_MEDIUM = 3;
+
+	// Token: 0x040017F3 RID: 6131
+	[Token(Token = "0x4001661")]
+	public const short CANDY_CORN_COUNT_LARGE = 5;
+
+	// Token: 0x040017F4 RID: 6132
+	[Token(Token = "0x4001662")]
+	public const float CANDY_CORN_HP_SMALL = 5f;
+
+	// Token: 0x040017F5 RID: 6133
+	[Token(Token = "0x4001663")]
+	public const float CANDY_CORN_HP_MEDIUM = 15f;
+
+	// Token: 0x040017F6 RID: 6134
+	[Token(Token = "0x4001664")]
+	public const float CANDY_CORN_HP_LARGE = 25f;
+
+	// Token: 0x040017F7 RID: 6135
+	[Token(Token = "0x4001665")]
+	public const double CANDY_CORN_RNG_SOLO_SMALL = 56.0;
+
+	// Token: 0x040017F8 RID: 6136
+	[Token(Token = "0x4001666")]
+	public const double CANDY_CORN_RNG_SOLO_MEDIUM = 82.0;
+
+	// Token: 0x040017F9 RID: 6137
+	[Token(Token = "0x4001667")]
+	public const double CANDY_CORN_RNG_DUO_SMALL = 72.0;
+
+	// Token: 0x040017FA RID: 6138
+	[Token(Token = "0x4001668")]
+	public const double CANDY_CORN_RNG_DUO_MEDIUM = 89.0;
+
+	// Token: 0x040017FB RID: 6139
+	[Token(Token = "0x4001669")]
+	public const double CANDY_CORN_RNG_SQUAD_SMALL = 78.0;
+
+	// Token: 0x040017FC RID: 6140
+	[Token(Token = "0x400166A")]
+	public const double CANDY_CORN_RNG_SQUAD_MEDIUM = 93.0;
+}
