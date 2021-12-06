@@ -1,29 +1,42 @@
 import pygame
+from pygame import mixer
 
-from classes import Player, Background
-from config import WIDTH, HEIGHT
+from classes import Player, Background, Cursor, Weapon
+from config import *
 from constants import *
 
 def main():
 
     # Init program
     pygame.init()
+    mixer.init()
 
     clock = pygame.time.Clock()
     window = pygame.display.set_mode((WIDTH, HEIGHT))
-    pygame.display.set_caption('SAR Trainer')
+    pygame.display.set_caption(WINDOW_TITLE)
+
+    # Window icon
+    windowIcon = pygame.image.load(WINDOW_ICON_PATH)
+    windowIcon = pygame.transform.scale(windowIcon, (32, 32))
+    pygame.display.set_icon(windowIcon)
 
     # Set background
-    background = Background(window, './img/bg/LoginSceneBG.png')
+    background = Background(window, BACKGROUND_IMAGE_PATH)
     background.resize(WIDTH, HEIGHT)
     background.setBackground()
 
     # Init player
-    player = Player(window, './img/plastic.png', int(WIDTH / 2), int(HEIGHT / 2))
+    player = Player(window, PLAYER_IMAGE_PATH, int(WIDTH / 2), int(HEIGHT / 2))
     player.resizePlayerImg(
         int(player.playerImg.get_width() * 0.1),
         int(player.playerImg.get_height() * 0.1)
     )
+
+    # Init cursor
+    cursor = Cursor(window, CURSOR_IMAGE_PATH)
+    cursor.displayCursor()
+
+    weapon = Weapon(window, 'GunMagnum')
 
     borderX = WIDTH - player.playerImgWidth
     borderY = HEIGHT - player.playerImgHeight
@@ -32,7 +45,22 @@ def main():
     while (run):
         
         dt = clock.tick(60)
-        run = checkQuit()
+
+        for event in pygame.event.get():
+            # Break loop
+            if (event.type == pygame.QUIT):
+                run = False
+
+            # Mouse button pressed
+            elif (event.type == pygame.MOUSEBUTTONDOWN):
+                
+                # LEFT
+                if (event.button == 1):
+                    # print('LEFT Mouse DOWN')
+                    weapon.playSound()
+
+                elif (event.button == 3):
+                    print('RIGHT Mouse DOWN')
 
         # Get key pressed by user / player
         keys = pygame.key.get_pressed()
@@ -76,16 +104,11 @@ def main():
         background.setBackground()
 
         player.drawPlayer()
+        cursor.displayCursor()
+
         pygame.display.update()
     
     pygame.quit()
-
-def checkQuit():
-    for event in pygame.event.get():
-        if (event.type == pygame.QUIT):
-            return False
-    
-    return True
 
 if (__name__ == '__main__'):
     main()

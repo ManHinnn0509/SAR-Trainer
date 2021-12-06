@@ -1,3 +1,23 @@
+WEAPON_ID_LIST = [
+   "GunPistol",
+   "GunDualPistol",
+   "GunMagnum",
+   "GunDeagle",
+   "GunSilencedPistol",
+   "GunShotgun",
+   "GunJag7",
+   "GunSMG",
+   "GunThomas",
+   "GunAK",
+   "GunM16",
+   "GunDart",
+   "GunHuntingRifle",
+   "GunSniper",
+   "GunMinigun",
+   "GunBow",
+   "GunCrossbow"
+]
+
 BULLET_MOVE_SPEED = {
    "GunPistol": 135,
    "GunDualPistol": 135,
