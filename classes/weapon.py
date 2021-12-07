@@ -23,10 +23,10 @@ class Weapon:
         self.audioFiles = os.listdir(self.audioDir)
     
     def fire(self, playerX, playerY, destX, destY):
-        bullet = Bullet(self.window, self.weaponID)
-        bullet.draw(playerX, playerY, destX, destY)
-
+        bullet = Bullet(self.window, self.weaponID, playerX, playerY, destX, destY)
         self.playSound()
+
+        return bullet
     
     def playSound(self):
         audioFile = random.choice(self.audioFiles)

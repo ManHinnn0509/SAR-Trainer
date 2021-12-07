@@ -13,7 +13,17 @@ class Player:
 
         self.playerX = x
         self.playerY = y
+
+        self.centerX = self.playerX - self.playerImgWidth
+        self.centerY = self.playerY - self.playerImgHeight
     
+    def updateCoords(self, dx, dy):
+        self.playerX += dx
+        self.playerY += dy
+
+        self.centerX = self.playerX + self.playerImgWidth / 2
+        self.centerY = self.playerY + self.playerImgHeight / 2
+
     def resizePlayerImg(self, scaleX, scaleY):
         self.playerImg = pygame.transform.scale(self.playerImg, (scaleX, scaleY))
         

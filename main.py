@@ -1,7 +1,7 @@
 import pygame
 from pygame import mixer
 
-from classes import Player, Background, Cursor, Weapon
+from classes import Player, Background, Cursor, Weapon, FiredBullets
 from config import *
 from constants import *
 
@@ -37,6 +37,7 @@ def main():
     cursor.displayCursor()
 
     weapon = Weapon(window, 'GunMagnum')
+    firedBullets = FiredBullets()
 
     borderX = WIDTH - player.playerImgWidth
     borderY = HEIGHT - player.playerImgHeight
@@ -45,6 +46,12 @@ def main():
     while (run):
         
         dt = clock.tick(60)
+        
+        window.fill((0, 0, 0))
+        background.setBackground()
+
+        player.drawPlayer()
+        cursor.displayCursor()
 
         for event in pygame.event.get():
             # Break loop
@@ -58,14 +65,22 @@ def main():
                 if (event.button == 1):
                     # print('LEFT Mouse DOWN')
                     mouseX, mouseY = pygame.mouse.get_pos()
-                    weapon.fire(
-                        player.playerX, player.playerY,
+
+                    bullet = weapon.fire(
+                        player.centerX, player.centerY,
                         mouseX, mouseY
                     )
+                    
+                    firedBullets.addBullet(bullet)
+
+                    # print(f'Player: {player.playerX}, {player.playerY}')
+                    # print(f'Mouse: {mouseX}, {mouseY}')
 
                 elif (event.button == 3):
                     # print('RIGHT Mouse DOWN')
                     pass
+        
+        firedBullets.updateBullets()
 
         # Get key pressed by user / player
         keys = pygame.key.get_pressed()
@@ -92,8 +107,7 @@ def main():
             # print('D')
             dx = PLAYER_MAX_MOVE_SPEED_NORMAL * dt
         
-        player.playerX += dx
-        player.playerY += dy
+        player.updateCoords(dx, dy)
 
         if (player.playerX <= 0):
             player.playerX = 0
@@ -104,12 +118,6 @@ def main():
             player.playerY = 0
         elif (player.playerY >= borderY):
             player.playerY = borderY
-
-        window.fill((0, 0, 0))
-        background.setBackground()
-
-        player.drawPlayer()
-        cursor.displayCursor()
 
         pygame.display.update()
     
