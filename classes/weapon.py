@@ -8,7 +8,8 @@ import pygame
 from pygame import mixer
 
 from config import VOLUME
-from constants import WEAPON_ID_LIST, BULLET_MOVE_SPEED
+from constants import WEAPON_ID_LIST
+from classes.bullet import Bullet
 
 class Weapon:
 
@@ -17,11 +18,15 @@ class Weapon:
 
         # The input weaponID show always be valid
         self.weaponID = weaponID
-        self.bulletSpeed = BULLET_MOVE_SPEED[weaponID]
 
         self.audioDir = f"./audio/{weaponID}"
         self.audioFiles = os.listdir(self.audioDir)
-        print(self.audioFiles)
+    
+    def fire(self, playerX, playerY, destX, destY):
+        bullet = Bullet(self.window, self.weaponID)
+        bullet.draw(playerX, playerY, destX, destY)
+
+        self.playSound()
     
     def playSound(self):
         audioFile = random.choice(self.audioFiles)

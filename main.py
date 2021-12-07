@@ -57,10 +57,15 @@ def main():
                 # LEFT
                 if (event.button == 1):
                     # print('LEFT Mouse DOWN')
-                    weapon.playSound()
+                    mouseX, mouseY = pygame.mouse.get_pos()
+                    weapon.fire(
+                        player.playerX, player.playerY,
+                        mouseX, mouseY
+                    )
 
                 elif (event.button == 3):
-                    print('RIGHT Mouse DOWN')
+                    # print('RIGHT Mouse DOWN')
+                    pass
 
         # Get key pressed by user / player
         keys = pygame.key.get_pressed()
