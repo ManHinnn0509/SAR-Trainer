@@ -1,23 +1,3 @@
-WEAPON_ID_LIST = [
-   "GunPistol",
-   "GunDualPistol",
-   "GunMagnum",
-   "GunDeagle",
-   "GunSilencedPistol",
-   "GunShotgun",
-   "GunJag7",
-   "GunSMG",
-   "GunThomas",
-   "GunAK",
-   "GunM16",
-   "GunDart",
-   "GunHuntingRifle",
-   "GunSniper",
-   "GunMinigun",
-   "GunBow",
-   "GunCrossbow"
-]
-
 BULLET_MOVE_SPEED = {
    "GunPistol": 135,
    "GunDualPistol": 135,
@@ -37,5 +17,7 @@ BULLET_MOVE_SPEED = {
    "GunBow": 170,
    "GunCrossbow": 155
 }
+
+WEAPON_ID_LIST = list(BULLET_MOVE_SPEED.keys())
 
 PLAYER_MAX_MOVE_SPEED_NORMAL = 31 / 100

@@ -23,6 +23,7 @@ class Weapon:
         self.audioFiles = os.listdir(self.audioDir)
     
     def fire(self, playerX, playerY, destX, destY):
+        # Spawns a bullet everytime when the player fires
         bullet = Bullet(self.window, self.weaponID, playerX, playerY, destX, destY)
         self.playSound()
 
