@@ -4,7 +4,6 @@ import math
 from config import WIDTH, HEIGHT
 from constants import BULLET_MOVE_SPEED
 
-
 class Bullet:
     def __init__(self, window, weaponID, srcX, srcY, destX, destY) -> None:
         self.window = window
@@ -13,12 +12,12 @@ class Bullet:
         self.weaponID = weaponID
         
         # Bullet speed, get from the constant dict
-        self.bulletSpeed = BULLET_MOVE_SPEED[weaponID] / 100
+        self.bulletSpeed = BULLET_MOVE_SPEED[weaponID] / 10
 
         # Status of the bullet
         # Turn this to False if:
         # - The bullet hits something
-        # - Out of sight
+        # - Out of range
         # - Maximum distance reached (?)
         self.alive = True
 
@@ -52,7 +51,24 @@ class Bullet:
 
         self.bullet = self.__createBullet()
 
-    def draw(self):
+    def __createBullet(self):
+        # These 2 values will be changed in the future
+        # Since the bullet size / color of each weapons are different
+        # This is for the default weapon (Magnum)
+        bulletSize = (40, 3)
+        bulletColor = (255, 255, 255)
+
+        bullet = pygame.Surface(bulletSize).convert_alpha()
+        bullet.fill(bulletColor)
+        bullet = pygame.transform.rotate(bullet, self.angle)
+
+        return bullet
+
+    def draw(self, enemyList):
+
+        # The parameter 'enemyList' is for checking if the bullet hits an enemy
+        # If it does, then set 'alive' to False
+
         # Test | Draw a circle on the mouse's coords
         # pygame.draw.circle(self.window, (0, 255, 0), (self.currX, self.currY), 10, 0)
         
@@ -70,25 +86,24 @@ class Bullet:
         
         if ((self.currY >= HEIGHT) or (self.currY <= 0)):
             self.alive = False
+        
+        if (self.hittedEnemy(enemyList)):
+            self.alive = False
+    
+    def hittedEnemy(self, enemyList):
+        for enemy in enemyList.enemies:
 
-        # Draws a red dot on player's position & mouse position
-        # pygame.draw.circle(self.window, (255, 0, 0), (self.srcX, self.srcY), 10, 0)
-        # pygame.draw.circle(self.window, (0, 0, 255), (self.destX, self.destY), 10, 0)
+            dx = math.pow((enemy.centerX - self.currX), 2)
+            dy = math.pow((enemy.centerY - self.currY), 2)
+            dist = math.sqrt(dx + dy)
 
-        # midPoint = (int((self.destX + self.srcX) / 2), int ((self.destY + self.srcY) / 2))
-        # pygame.draw.circle(self.window, (255, 0, 255), midPoint, 10, 0)
+            colDist = enemy.colRadius * 2        # r * 2
+            if (dist < colDist):
+                enemy.alive = False
+                return True
+        
+        return False
 
-        # pygame.draw.line(self.window, (255, 0, 255), (self.srcX, self.srcY), (self.destX, self.destY))
-
-    def __createBullet(self):
-        bulletSize = (7, 2)
-        bulletColor = (255, 255, 255)
-
-        bullet = pygame.Surface(bulletSize).convert_alpha()
-        bullet.fill(bulletColor)
-        bullet = pygame.transform.rotate(bullet, self.angle)
-
-        return bullet
 
 '''
 class Bullet:

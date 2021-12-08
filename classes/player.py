@@ -11,11 +11,13 @@ class Player:
         self.playerImgWidth = self.playerImg.get_width()
         self.playerImgHeight = self.playerImg.get_height()
 
+        # Current top-left coords of the player
         self.playerX = x
         self.playerY = y
 
-        self.centerX = self.playerX - self.playerImgWidth
-        self.centerY = self.playerY - self.playerImgHeight
+        # The coords. of the middle (center?) of the player
+        self.centerX = self.playerX + self.playerImgWidth / 2
+        self.centerY = self.playerY + self.playerImgHeight / 2
     
     def updateCoords(self, dx, dy):
         self.playerX += dx

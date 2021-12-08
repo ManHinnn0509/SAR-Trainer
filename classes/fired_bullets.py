@@ -8,12 +8,12 @@ class FiredBullets:
     def addBullet(self, bullet: Bullet):
         self.bullets.append(bullet)
     
-    def updateBullets(self):
+    def updateBullets(self, enemyList):
 
         for bullet in self.bullets:
             
             if (bullet.alive):
-                bullet.draw()
+                bullet.draw(enemyList)
             
             else:
                 self.bullets.remove(bullet)

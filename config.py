@@ -10,3 +10,6 @@ WINDOW_ICON_PATH = './img/dr_beagle/dr_beagle_head.png'
 BACKGROUND_IMAGE_PATH = './img/bg/bg_1.jpg'
 PLAYER_IMAGE_PATH = './img/plastic.png'
 CURSOR_IMAGE_PATH = './img/cursor/Reticule1.png'
+ENEMY_IMAGES_PATH = './img/target'
+
+MAX_ENEMY_AMOUNT = 5

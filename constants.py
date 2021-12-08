@@ -1,3 +1,7 @@
+ENEMY_COLLISION_RADIUS = 20
+
+# --- Constants from SAR (Including modified constants)
+
 BULLET_MOVE_SPEED = {
    "GunPistol": 135,
    "GunDualPistol": 135,

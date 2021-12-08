@@ -1,7 +1,9 @@
+import os
 import pygame
 from pygame import mixer
 
-from classes import Player, Background, Cursor, Weapon, FiredBullets
+from util.utils import randInt, randChoice
+from classes import *
 from config import *
 from constants import *
 
@@ -36,22 +38,32 @@ def main():
     cursor = Cursor(window, CURSOR_IMAGE_PATH)
     cursor.displayCursor()
 
+    # Init weapon, and also list thats records bullet states
     weapon = Weapon(window, 'GunMagnum')
     firedBullets = FiredBullets()
+
+    # --- Varibles, maybe also constants
+
+    run = True
 
     borderX = WIDTH - player.playerImgWidth
     borderY = HEIGHT - player.playerImgHeight
 
-    run = True
+    enemyImages = [i for i in os.listdir(ENEMY_IMAGES_PATH) if (i.endswith('.png'))]
+    enemies = EnemyList(MAX_ENEMY_AMOUNT)
+
+    '''
+    for _ in range(MAX_ENEMY_AMOUNT):
+        e = Enemy(window, randChoice(enemyImages), randInt(0, WIDTH), randInt(0, HEIGHT))
+        enemies.addEnemy(e)
+    '''
+    
     while (run):
         
         dt = clock.tick(60)
         
         window.fill((0, 0, 0))
         background.setBackground()
-
-        player.drawPlayer()
-        cursor.displayCursor()
 
         for event in pygame.event.get():
             # Break loop
@@ -80,7 +92,17 @@ def main():
                     # print('RIGHT Mouse DOWN')
                     pass
         
-        firedBullets.updateBullets()
+        enemies.updateEnemies()
+        firedBullets.updateBullets(enemies)
+
+        while not (enemies.isFull()):
+            e = createEnemy(window, enemyImages)
+            enemies.addEnemy(e)
+
+        # Put these 2 lines after the update methods
+        # So that the player & cursor won't be covered by the enemy(ies)
+        player.drawPlayer()
+        cursor.displayCursor()
 
         # Get key pressed by user / player
         keys = pygame.key.get_pressed()
@@ -122,6 +144,22 @@ def main():
         pygame.display.update()
     
     pygame.quit()
+
+def createEnemy(window, enemyImages) -> Enemy:
+
+    # A constant value to avoid the enemy spawning beyond screen
+    BORDER_X = 100
+    BORDER_Y = 100
+
+    e = Enemy(
+        window,
+        randChoice(enemyImages),
+        randInt(0 + BORDER_X, WIDTH - BORDER_X),
+        randInt(0 + BORDER_Y, HEIGHT - BORDER_Y),
+        ENEMY_COLLISION_RADIUS
+    )
+
+    return e
 
 if (__name__ == '__main__'):
     main()
