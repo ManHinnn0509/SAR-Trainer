@@ -51,12 +51,6 @@ def main():
 
     enemyImages = [i for i in os.listdir(ENEMY_IMAGES_PATH) if (i.endswith('.png'))]
     enemies = EnemyList(MAX_ENEMY_AMOUNT)
-
-    '''
-    for _ in range(MAX_ENEMY_AMOUNT):
-        e = Enemy(window, randChoice(enemyImages), randInt(0, WIDTH), randInt(0, HEIGHT))
-        enemies.addEnemy(e)
-    '''
     
     while (run):
         
@@ -88,6 +82,7 @@ def main():
                     # print(f'Player: {player.playerX}, {player.playerY}')
                     # print(f'Mouse: {mouseX}, {mouseY}')
 
+                # RIGHT
                 elif (event.button == 3):
                     # print('RIGHT Mouse DOWN')
                     pass
@@ -95,6 +90,7 @@ def main():
         enemies.updateEnemies()
         firedBullets.updateBullets(enemies)
 
+        # Spawn enemy(ies) until it reaches the maximum amount
         while not (enemies.isFull()):
             e = createEnemy(window, enemyImages)
             enemies.addEnemy(e)
@@ -107,6 +103,7 @@ def main():
         # Get key pressed by user / player
         keys = pygame.key.get_pressed()
 
+        # Player movement
         dx, dy = 0, 0
 
         # W
@@ -129,17 +126,7 @@ def main():
             # print('D')
             dx = PLAYER_MAX_MOVE_SPEED_NORMAL * dt
         
-        player.updateCoords(dx, dy)
-
-        if (player.playerX <= 0):
-            player.playerX = 0
-        elif (player.playerX >= borderX):
-            player.playerX = borderX
-        
-        if (player.playerY <= 0):
-            player.playerY = 0
-        elif (player.playerY >= borderY):
-            player.playerY = borderY
+        player.updateCoords(dx, dy, borderX, borderY)
 
         pygame.display.update()
     

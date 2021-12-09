@@ -80,17 +80,19 @@ class Bullet:
         self.currX += self.dispX
         self.currY += self.dispY
 
-        # Checks if the bullets reached the border
+        # Checks if the bullet reached the border
         if ((self.currX >= WIDTH) or (self.currX <= 0)):
             self.alive = False
         
         if ((self.currY >= HEIGHT) or (self.currY <= 0)):
             self.alive = False
         
+        # Checks if the bullet hitted an enemy
         if (self.hittedEnemy(enemyList)):
             self.alive = False
     
     def hittedEnemy(self, enemyList):
+        # Check for each enemies on screen
         for enemy in enemyList.enemies:
 
             dx = math.pow((enemy.centerX - self.currX), 2)
@@ -99,6 +101,7 @@ class Bullet:
 
             colDist = enemy.colRadius * 2        # r * 2
             if (dist < colDist):
+                # Remove the current loop's enemy by setting it's 'alive' to False
                 enemy.alive = False
                 return True
         

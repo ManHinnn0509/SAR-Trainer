@@ -19,9 +19,19 @@ class Player:
         self.centerX = self.playerX + self.playerImgWidth / 2
         self.centerY = self.playerY + self.playerImgHeight / 2
     
-    def updateCoords(self, dx, dy):
+    def updateCoords(self, dx, dy, borderX, borderY):
         self.playerX += dx
         self.playerY += dy
+
+        if (self.playerX <= 0):
+            self.playerX = 0
+        elif (self.playerX >= borderX):
+            self.playerX = borderX
+        
+        if (self.playerY <= 0):
+            self.playerY = 0
+        elif (self.playerY >= borderY):
+            self.playerY = borderY
 
         self.centerX = self.playerX + self.playerImgWidth / 2
         self.centerY = self.playerY + self.playerImgHeight / 2
