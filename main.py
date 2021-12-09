@@ -22,10 +22,12 @@ def main():
     windowIcon = pygame.transform.scale(windowIcon, (32, 32))
     pygame.display.set_icon(windowIcon)
 
-    # Set background
+    # Init background
     background = Background(window, BACKGROUND_IMAGE_PATH)
     background.resize(WIDTH, HEIGHT)
-    background.setBackground()
+
+    # Init cursor
+    cursor = Cursor(window, CURSOR_IMAGE_PATH)
 
     # Init player
     player = Player(window, PLAYER_IMAGE_PATH, int(WIDTH / 2), int(HEIGHT / 2))
@@ -34,13 +36,12 @@ def main():
         int(player.playerImg.get_height() * 0.1)
     )
 
-    # Init cursor
-    cursor = Cursor(window, CURSOR_IMAGE_PATH)
-    cursor.displayCursor()
-
-    # Init weapon, and also list thats records bullet states
+    # Init weapon, and also a list thats records bullet states
     weapon = Weapon(window, 'GunMagnum')
     firedBullets = FiredBullets()
+
+    enemyImages = [i for i in os.listdir(ENEMY_IMAGES_PATH) if (i.endswith('.png'))]
+    enemies = EnemyList(MAX_ENEMY_AMOUNT)
 
     # --- Varibles, maybe also constants
 
@@ -49,12 +50,9 @@ def main():
     borderX = WIDTH - player.playerImgWidth
     borderY = HEIGHT - player.playerImgHeight
 
-    enemyImages = [i for i in os.listdir(ENEMY_IMAGES_PATH) if (i.endswith('.png'))]
-    enemies = EnemyList(MAX_ENEMY_AMOUNT)
-    
     while (run):
-        
         dt = clock.tick(60)
+        print(dt)
         
         window.fill((0, 0, 0))
         background.setBackground()
@@ -126,11 +124,24 @@ def main():
             # print('D')
             dx = PLAYER_MAX_MOVE_SPEED_NORMAL * dt
         
+        # ESC
+        if (keys[pygame.K_ESCAPE]):
+            # ESC key to exit
+            run = False
+        
         player.updateCoords(dx, dy, borderX, borderY)
 
         pygame.display.update()
     
     pygame.quit()
+
+    print(f"Fired bullets: {firedBullets.firedBulletsAmount}")
+    print(f"Enemy(ies) killed: {enemies.killedEnemiesAmount}")
+
+    hitRate = 0 if (firedBullets.firedBulletsAmount == 0) else ((enemies.killedEnemiesAmount / firedBullets.firedBulletsAmount) * 100)
+    print(f"Hit rate: {hitRate:.2f} %")
+
+    print('--- End of Program ---')
 
 def createEnemy(window, enemyImages) -> Enemy:
 

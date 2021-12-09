@@ -13,4 +13,4 @@ BACKGROUND_IMAGE_PATH = './img/bg/bg_1.jpg'
 CURSOR_IMAGE_PATH = './img/cursor/Reticule1.png'
 ENEMY_IMAGES_PATH = './img/enemy'
 
-MAX_ENEMY_AMOUNT = 5
+MAX_ENEMY_AMOUNT = 3

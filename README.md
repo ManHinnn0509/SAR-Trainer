@@ -6,9 +6,11 @@ Default weapon: Magnum
 
 ## Planned
 
+* [ ] Better spawning mechanism (Enemy)
 * [ ] Better moving speed
 * [ ] Better bullet speed
-* [ ] Makes enemy moves
+* [ ] Make enemy moves
+* [ ] Add reload to weapons
 * [ ] Fix character in the middle which moving around
 * [ ] Add more weapons
 * [ ] Add full-auto weapons

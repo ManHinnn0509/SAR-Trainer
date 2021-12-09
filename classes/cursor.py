@@ -14,3 +14,6 @@ class Cursor:
     def displayCursor(self):
         self.rect.center = pygame.mouse.get_pos()
         self.window.blit(self.cursorImg, self.rect)
+
+        # To make sure where the cursor's coords is
+        # pygame.draw.circle(self.window, (0, 255, 0), pygame.mouse.get_pos(), 5, 0)

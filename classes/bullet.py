@@ -12,7 +12,7 @@ class Bullet:
         self.weaponID = weaponID
         
         # Bullet speed, get from the constant dict
-        self.bulletSpeed = BULLET_MOVE_SPEED[weaponID] / 10
+        self.bulletSpeed = BULLET_MOVE_SPEED[weaponID] * 0.3
 
         # Status of the bullet
         # Turn this to False if:
@@ -55,7 +55,7 @@ class Bullet:
         # These 2 values will be changed in the future
         # Since the bullet size / color of each weapons are different
         # This is for the default weapon (Magnum)
-        bulletSize = (40, 3)
+        bulletSize = (55, 2)
         bulletColor = (255, 255, 255)
 
         bullet = pygame.Surface(bulletSize).convert_alpha()
@@ -75,8 +75,6 @@ class Bullet:
         bulletRect = self.bullet.get_rect(center=(self.currX, self.currY))
         self.window.blit(self.bullet, bulletRect)
 
-        # NOT DONE YET
-        # WRONG CALCULATION IN HERE
         self.currX += self.dispX
         self.currY += self.dispY
 

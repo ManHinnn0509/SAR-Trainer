@@ -1,5 +1,3 @@
-import pygame
-
 from classes.enemy import Enemy
 
 class EnemyList:
@@ -7,8 +5,9 @@ class EnemyList:
     def __init__(self, maxAmount) -> None:
         self.enemies = []
         self.maxAmount = maxAmount
+        self.killedEnemiesAmount = 0
     
-    def addEnemy(self, enemy):
+    def addEnemy(self, enemy: Enemy):
         if (len(self.enemies) != self.maxAmount):
             self.enemies.append(enemy)
     
@@ -20,6 +19,7 @@ class EnemyList:
             
             else:
                 self.enemies.remove(enemy)
+                self.killedEnemiesAmount += 1
     
     def isFull(self):
         return (len(self.enemies) == self.maxAmount)
