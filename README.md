@@ -6,12 +6,30 @@ Default weapon: Magnum
 
 ## Planned
 
-* [ ] Better spawning mechanism (Enemy)
+I divided them into different categories
+
+### UI
+
+* [ ] Add status display on top-left corner (Bullets fired, kills, hit rate)
+
+### Player
+
 * [ ] Better moving speed
-* [ ] Better bullet speed
-* [ ] Make enemy moves
-* [ ] Add reload to weapons
 * [ ] Fix character in the middle which moving around
+
+### Enemies
+
+* [ ] Better spawning mechanism
+* [ ] Make enemy moves
+
+### Weapons
+
+* [ ] Better bullet speed
+* [ ] Add reload to weapons
 * [ ] Add more weapons
 * [ ] Add full-auto weapons
 * [ ] Add cooldown on specific wepaons (E.g: Magnum)
+
+### Ultimate goal
+
+* [ ] Re-create this in Unity / C#

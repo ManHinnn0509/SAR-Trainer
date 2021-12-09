@@ -52,7 +52,6 @@ def main():
 
     while (run):
         dt = clock.tick(60)
-        print(dt)
         
         window.fill((0, 0, 0))
         background.setBackground()
