@@ -136,6 +136,7 @@ def main():
 
     print(f"Fired bullets: {firedBullets.firedBulletsAmount}")
     print(f"Enemy(ies) killed: {enemies.killedEnemiesAmount}")
+    print(f"Missed: {firedBullets.firedBulletsAmount - enemies.killedEnemiesAmount}")
 
     hitRate = 0 if (firedBullets.firedBulletsAmount == 0) else ((enemies.killedEnemiesAmount / firedBullets.firedBulletsAmount) * 100)
     print(f"Hit rate: {hitRate:.2f} %")
