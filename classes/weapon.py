@@ -23,10 +23,18 @@ class Weapon:
         self.audioFiles = os.listdir(self.audioDir)
 
         self.reloadAudioDir = f"./audio/{weaponID}/reload"
-        self.reloadAudioFiles = os.listdir(self.reloadAudioDir)
+        
+        # Only 1 reload audio, so just get the first one
+        self.reloadAudioFile = os.listdir(self.reloadAudioDir)[0]
+        self.reloadAudioLen = mixer.Sound(self.reloadAudioFile).get_length()
 
         self.clipSize = WEAPON_CLIP_SIZE[weaponID]
         self.clip = self.clipSize
+
+        self.clipEmpty = False
+        self.reloading = False
+
+        self.reloadStartTime = None
     
     def fire(self, playerX, playerY, destX, destY):
         # Spawns a bullet everytime when the player fires
@@ -37,7 +45,7 @@ class Weapon:
         self.playSound(audioFile)
 
         return bullet
-    
+
     def playSound(self, audioFilePath):
         mixer.music.load(audioFilePath)
         mixer.music.set_volume(VOLUME / 100)
