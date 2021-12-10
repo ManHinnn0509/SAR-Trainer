@@ -27,7 +27,7 @@ I divided them into different categories
 
 ### UI
 
-* [ ] Add status display on top-left corner (Fired bullets amount, kills, hit rate)
+* [x] [Add status display on top-left corner (Fired bullets amount, kills, hit rate)](https://github.com/ManHinnn0509/SAR-Trainer/commit/513b867c0efbafbda7e3187e012dbd279c076073)
 
 ### Player
 
