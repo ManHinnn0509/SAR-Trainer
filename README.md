@@ -6,6 +6,8 @@ Default weapon: Magnum
 
 Note: I DO NOT own the artworks / audios used in this project
 
+P.S: This is my first time developing game like applications with Pygame :P
+
 ## Demo
 
 ![init](./img/demo/init.png)
@@ -48,6 +50,7 @@ I divided them into different categories
 * [ ] Add full-auto weapons
 * [ ] Add cooldown on specific wepaons (E.g: Magnum)
 
-### Ultimate goal
+### Ultimate goals
 
+* [ ] Remake with camera that follows the player (Player always be in the center)
 * [ ] Re-create this in Unity / C#
