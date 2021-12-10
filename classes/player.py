@@ -40,7 +40,6 @@ class Player:
         
         self.playerImgWidth = self.playerImg.get_width()
         self.playerImgHeight = self.playerImg.get_height()
-
         self.__updateCenterCoords()
 
     def drawPlayer(self):

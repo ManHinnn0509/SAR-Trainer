@@ -2,6 +2,8 @@ import json
 
 """
     For extracting bulletMoveSpeed from _weapons
+
+    Update: Can also be used for other different keys
 """
 
 def readFile(p: str, encoding='utf-8'):
@@ -20,13 +22,15 @@ print(len(data))
 
 d = {}
 
-for i in data:
-    if ('bulletMoveSpeed' in i):
-        id = i['inventoryID']
-        speed = i['bulletMoveSpeed']
+key = 'clipSize'
 
-        print(f"{id} | {speed}")
-        d[id] = speed
+for i in data:
+    if (key in i):
+        id = i['inventoryID']
+        value = i[key]
+
+        print(f"{id} | {value}")
+        d[id] = value
 
 print('---')
 print(d)
