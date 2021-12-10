@@ -42,6 +42,7 @@ I divided them into different categories
 ### Weapons
 
 * [ ] Better bullet speed
+* [ ] Add recoil
 * [ ] Add reload to weapons
 * [ ] Add more weapons
 * [ ] Add full-auto weapons

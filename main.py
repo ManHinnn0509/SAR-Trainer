@@ -2,7 +2,7 @@ import os
 import pygame
 from pygame import mixer
 
-from util.utils import randInt, randChoice
+from util.utils import calcStats, randInt, randChoice
 from classes import *
 from config import *
 from constants import *
@@ -40,8 +40,12 @@ def main():
     weapon = Weapon(window, 'GunMagnum')
     firedBullets = FiredBullets()
 
+    # Init data & variable for enemies
     enemyImages = [i for i in os.listdir(ENEMY_IMAGES_PATH) if (i.endswith('.png'))]
     enemies = EnemyList(MAX_ENEMY_AMOUNT)
+
+    # Init stats display on top-left corner
+    textDisplay = TextDisplay(window, "Comic Sans MS", 15)
 
     # --- Varibles, maybe also constants
 
@@ -97,6 +101,14 @@ def main():
         player.drawPlayer()
         cursor.displayCursor()
 
+        stats = calcStats(firedBullets.firedBulletsAmount, enemies.killedEnemiesAmount)
+        info = f"""
+        Enemy(ies) killed: {stats[0]}
+        Fired bullets: {stats[1]}
+        Hit rate: {stats[3]}
+        """
+        textDisplay.displayMultipleLine(info, (255, 255, 255), 0, 0)
+
         # Get key pressed by user / player
         keys = pygame.key.get_pressed()
 
@@ -134,12 +146,11 @@ def main():
     
     pygame.quit()
 
-    print(f"Fired bullets: {firedBullets.firedBulletsAmount}")
-    print(f"Enemy(ies) killed: {enemies.killedEnemiesAmount}")
-    print(f"Missed: {firedBullets.firedBulletsAmount - enemies.killedEnemiesAmount}")
-
-    hitRate = 0 if (firedBullets.firedBulletsAmount == 0) else ((enemies.killedEnemiesAmount / firedBullets.firedBulletsAmount) * 100)
-    print(f"Hit rate: {hitRate:.2f} %")
+    stats = calcStats(firedBullets.firedBulletsAmount, enemies.killedEnemiesAmount)
+    print(f"Enemy(ies) killed: {stats[0]}")
+    print(f"Fired bullets: {stats[1]}")
+    print(f"Missed shots: {stats[2]}")
+    print(f"Hit rate: {stats[3]}")
 
     print('--- End of Program ---')
 

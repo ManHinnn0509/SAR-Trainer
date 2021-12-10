@@ -33,8 +33,7 @@ class Player:
         elif (self.playerY >= borderY):
             self.playerY = borderY
 
-        self.centerX = self.playerX + self.playerImgWidth / 2
-        self.centerY = self.playerY + self.playerImgHeight / 2
+        self.__updateCenterCoords()
 
     def resizePlayerImg(self, scaleX, scaleY):
         self.playerImg = pygame.transform.scale(self.playerImg, (scaleX, scaleY))
@@ -42,5 +41,16 @@ class Player:
         self.playerImgWidth = self.playerImg.get_width()
         self.playerImgHeight = self.playerImg.get_height()
 
+        self.__updateCenterCoords()
+
     def drawPlayer(self):
         self.window.blit(self.playerImg, (self.playerX, self.playerY))
+    
+    def __updateCenterCoords(self):
+        """
+            Updates the center coords after:
+            - Moving
+            - Resizing
+        """
+        self.centerX = self.playerX + self.playerImgWidth / 2
+        self.centerY = self.playerY + self.playerImgHeight / 2
