@@ -24,6 +24,9 @@ class Weapon:
 
         self.reloadAudioDir = f"./audio/{weaponID}/reload"
         
+        self.reloadAudioFiles = os.listdir(self.reloadAudioDir)
+        print(f"[Debug] {len(self.reloadAudioFiles)} found")
+
         # Only 1 reload audio, so just get the first one
         self.reloadAudioFile = os.listdir(self.reloadAudioDir)[0]
         self.reloadAudioLen = mixer.Sound(self.reloadAudioFile).get_length()
