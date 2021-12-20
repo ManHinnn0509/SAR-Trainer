@@ -28,8 +28,8 @@ class Weapon:
         print(f"[Debug] {len(self.reloadAudioFiles)} found")
 
         # Only 1 reload audio, so just get the first one
-        self.reloadAudioFile = os.listdir(self.reloadAudioDir)[0]
-        self.reloadAudioLen = mixer.Sound(self.reloadAudioFile).get_length()
+        self.reloadAudioFile = self.reloadAudioFiles[0]
+        self.reloadAudioLen = mixer.Sound(f"{self.reloadAudioDir}/{self.reloadAudioFile}").get_length()
 
         self.clipSize = WEAPON_CLIP_SIZE[weaponID]
         self.clip = self.clipSize
