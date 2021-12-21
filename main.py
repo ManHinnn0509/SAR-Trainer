@@ -78,7 +78,8 @@ def main():
                         mouseX, mouseY
                     )
                     
-                    firedBullets.addBullet(bullet)
+                    if (bullet != None):
+                        firedBullets.addBullet(bullet)
 
                     # print(f'Player: {player.playerX}, {player.playerY}')
                     # print(f'Mouse: {mouseX}, {mouseY}')
@@ -135,6 +136,10 @@ def main():
             # print('D')
             dx = PLAYER_MAX_MOVE_SPEED_NORMAL * dt
         
+        # Reload
+        if (keys[pygame.K_r]):
+            pass
+
         # ESC
         if (keys[pygame.K_ESCAPE]):
             # ESC key to exit

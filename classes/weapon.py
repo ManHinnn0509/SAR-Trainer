@@ -29,7 +29,8 @@ class Weapon:
 
         # Only 1 reload audio, so just get the first one
         self.reloadAudioFile = self.reloadAudioFiles[0]
-        self.reloadAudioLen = mixer.Sound(f"{self.reloadAudioDir}/{self.reloadAudioFile}").get_length()
+        self.reloadAudioFile = f"{self.reloadAudioDir}/{self.reloadAudioFile}"
+        self.reloadAudioLen = mixer.Sound(self.reloadAudioFile).get_length()
 
         self.clipSize = WEAPON_CLIP_SIZE[weaponID]
         self.clip = self.clipSize
@@ -38,6 +39,7 @@ class Weapon:
         self.reloading = False
 
         self.reloadStartTime = None
+        self.reloadEndTime = None
     
     def fire(self, playerX, playerY, destX, destY):
         # Spawns a bullet everytime when the player fires
