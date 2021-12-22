@@ -46,6 +46,7 @@ def main():
 
     # Init stats display on top-left corner
     textDisplay = TextDisplay(window, "Comic Sans MS", 15)
+    clipDisplay = TextDisplay(window, "Comic Sans MS", 20)
 
     # --- Varibles, maybe also constants
 
@@ -102,13 +103,29 @@ def main():
         player.drawPlayer()
         cursor.displayCursor()
 
+        # Display status
         stats = calcStats(firedBullets.firedBulletsAmount, enemies.killedEnemiesAmount)
         info = f"""
         Enemy(ies) killed: {stats[0]}
         Fired bullets: {stats[1]}
         Hit rate: {stats[3]}
         """
-        textDisplay.displayMultipleLine(info, (255, 255, 255), 0, 0)
+        textDisplay.displayMultipleLine(
+            info,
+            (255, 255, 255),
+            0,
+            0
+        )
+
+        # Display clip
+        weapon.clipCheck()
+        clipInfo = f"{weapon.clip} / {weapon.clipSize}"
+        clipDisplay.displayMultipleLine(
+            clipInfo,
+            (0, 255, 0),
+            WIDTH - 100,
+            HEIGHT - 50
+        )
 
         # Get key pressed by user / player
         keys = pygame.key.get_pressed()
@@ -138,7 +155,7 @@ def main():
         
         # Reload
         if (keys[pygame.K_r]):
-            pass
+            weapon.reload()
 
         # ESC
         if (keys[pygame.K_ESCAPE]):
