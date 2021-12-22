@@ -21,7 +21,8 @@ Like:
 * Window size
 * Volume
 * Images of player, cursor, background and enemies
-* Maximum enemy amount per time.
+* Maximum enemy amount per time
+* Infinite ammo
 
 ## Planned
 
@@ -45,7 +46,7 @@ I divided them into different categories
 
 * [ ] Better bullet speed
 * [ ] Add recoil
-* [ ] Add reload to weapons
+* [x] [Add reload to weapon(s)](https://github.com/ManHinnn0509/SAR-Trainer/commit/9966ed697c7f61d9a28fb765e7a619fc77dd772d)
 * [ ] Add more weapons
 * [ ] Add full-auto weapons
 * [ ] Add cooldown on specific wepaons (E.g: Magnum)
