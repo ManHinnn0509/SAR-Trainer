@@ -1,4 +1,4 @@
-# SAR-Trainer
+# SAR-Trainer <a href='#'><img src='./img/dr_beagle/dr_beagle_head.png' align="right" height="138.5" /></a>
 
 SAR simulator for practicing aiming &amp; shooting
 
